@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane fx:id="loginBorderPane" maxHeight="500.0" maxWidth="750.0" minHeight="500.0" minWidth="750.0" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox maxHeight="600.0" minHeight="384.0" prefHeight="412.0" prefWidth="120.0" BorderPane.alignment="BASELINE_LEFT">
+         <children>
+            <Button maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Professaur" translateX="35.0" translateY="70.0" />
+            <Button maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Home" translateX="35.0" translateY="90.0" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <Pane BorderPane.alignment="CENTER">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="75.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="150.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="225.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="75.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="150.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="225.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="75.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="150.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="225.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="75.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="150.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+            <StackPane layoutX="225.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Label" />
+               </children>
+            </StackPane>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <VBox maxHeight="80.0" maxWidth="200.0" minHeight="80.0" minWidth="200.0" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="TOP" text="Buzz Word">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <Label text="Dictionary Words">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
