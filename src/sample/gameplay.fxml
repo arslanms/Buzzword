@@ -25,98 +25,98 @@
          <children>
             <StackPane prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="B" />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label text="U" />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label text="B" />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label text="Z" />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label text="Z" />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label text="W" />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label text="O" />
                </children>
             </StackPane>
             <StackPane layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label text="A" />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label text="R" />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Label text="D" />
                </children>
             </StackPane>
          </children>
@@ -158,7 +158,7 @@
    <bottom>
       <VBox id="gameplayBottomVBox" fx:id="gameplayBottomVBox" prefHeight="95.0" prefWidth="750.0" BorderPane.alignment="CENTER">
          <children>
-            <Label id="levelLabel" fx:id="levelLabel" alignment="CENTER" prefHeight="15.0" prefWidth="980.0" text="Label">
+            <Label id="levelLabel" fx:id="levelLabel" alignment="CENTER" prefHeight="15.0" prefWidth="980.0" text="Level 1">
                <VBox.margin>
                   <Insets bottom="20.0" />
                </VBox.margin></Label>
@@ -169,11 +169,11 @@
    <top>
       <VBox id="gameplayTitleVBox" fx:id="gameplayTitleVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="256.0" BorderPane.alignment="CENTER">
          <children>
-            <Label id="gameplayTitleLabel" fx:id="gameplayTitleLabel" alignment="CENTER" prefHeight="15.0" prefWidth="788.0" text="Label">
+            <Label id="gameplayTitleLabel" fx:id="gameplayTitleLabel" alignment="CENTER" prefHeight="15.0" prefWidth="788.0" text="Buzz Word">
                <VBox.margin>
                   <Insets bottom="20.0" />
                </VBox.margin></Label>
-            <Label id="gameplayModeLabel" fx:id="gameplayModeLabel" alignment="CENTER" prefHeight="15.0" prefWidth="894.0" text="Label" />
+            <Label id="gameplayModeLabel" fx:id="gameplayModeLabel" alignment="CENTER" prefHeight="15.0" prefWidth="894.0" text="Dictionary Words" />
          </children>
       </VBox>
    </top>

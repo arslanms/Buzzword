@@ -11,146 +11,169 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<BorderPane fx:id="loginBorderPane" maxHeight="500.0" maxWidth="750.0" minHeight="500.0" minWidth="750.0" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane id="gameplayBorderPane" fx:id="gameplayBorderPane" maxHeight="500.0" maxWidth="750.0" minHeight="500.0" minWidth="750.0" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <left>
-      <VBox maxHeight="600.0" minHeight="384.0" prefHeight="412.0" prefWidth="120.0" BorderPane.alignment="BASELINE_LEFT">
+      <VBox id="gameplayLeftVBox" fx:id="gameplayLeftVBox" maxHeight="600.0" minHeight="384.0" prefHeight="412.0" prefWidth="120.0" BorderPane.alignment="BASELINE_LEFT">
          <children>
-            <Button maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Create New Profile" translateX="35.0" translateY="70.0" />
-            <Button maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Login" translateX="35.0" translateY="90.0" />
+            <Button id="gameplayProfileButton" fx:id="gameplayProfileButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Professaur" translateX="35.0" translateY="70.0" />
+            <Button id="gameplayHomeButton" fx:id="gameplayHomeButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Home" translateX="35.0" translateY="90.0" />
          </children>
       </VBox>
    </left>
    <center>
-      <Pane BorderPane.alignment="CENTER">
+      <Pane id="gameplayNodePane" fx:id="gameplayNodePane" BorderPane.alignment="CENTER">
          <children>
             <StackPane prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode" fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="B" />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="U" />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="B" />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Z" />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="Z" />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="W" />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="O" />
                </children>
             </StackPane>
             <StackPane layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="A" />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="R" />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle fill="WHITE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label text="D" />
                </children>
             </StackPane>
          </children>
       </Pane>
    </center>
    <right>
-      <VBox prefHeight="342.0" prefWidth="223.0" BorderPane.alignment="CENTER">
+      <VBox id="gameplayRightVBox" fx:id="gameplayRightVBox" prefHeight="342.0" prefWidth="223.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Label" />
-            <Label text="Label" />
-            <TableView prefHeight="200.0" prefWidth="200.0">
+            <Label id="gameplayExitButton" fx:id="gameplayExitButton" alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="210.0" text="Label">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label id="gameplayTimerLabel" fx:id="gameplayTimerLabel" alignment="CENTER" prefHeight="15.0" prefWidth="220.0" text="Time Remaing: 40s">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Label>
+            <TextField id="gameplayTextField" fx:id="gameplayTextField" promptText="Type Your Guess">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></TextField>
+            <TableView id="gameplayTable" fx:id="gameplayTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="221.0">
               <columns>
-                <TableColumn prefWidth="75.0" text="C1" />
-                <TableColumn prefWidth="75.0" text="C2" />
+                <TableColumn id="gameplayWordsColumn" fx:id="gameplayWordsColumn" prefWidth="140.0" text="Words" />
+                <TableColumn id="gameplayPoints" fx:id="gameplayPoints" prefWidth="82.0" text="Points" />
               </columns>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
             </TableView>
-            <Label text="Label" />
-            <Label text="Label" />
+            <Label id="totalPointsLabel" fx:id="totalPointsLabel" alignment="CENTER" prefHeight="15.0" prefWidth="229.0" text="Total: 40">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Label>
+            <Label id="targetScoreLabel" fx:id="targetScoreLabel" alignment="CENTER" prefHeight="15.0" prefWidth="259.0" text="Target Score: 75" />
          </children>
       </VBox>
    </right>
    <bottom>
-      <VBox prefHeight="95.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+      <VBox id="gameplayBottomVBox" fx:id="gameplayBottomVBox" prefHeight="95.0" prefWidth="750.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Label" />
-            <Label text="Label" />
+            <Label id="levelLabel" fx:id="levelLabel" alignment="CENTER" prefHeight="15.0" prefWidth="980.0" text="Level 1">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Label>
+            <Label id="playResumeButton" fx:id="playResumeButton" alignment="CENTER" prefHeight="15.0" prefWidth="961.0" text="Label" />
          </children>
       </VBox>
    </bottom>
    <top>
-      <VBox prefHeight="63.0" prefWidth="750.0" BorderPane.alignment="CENTER">
+      <VBox id="gameplayTitleVBox" fx:id="gameplayTitleVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="67.0" prefWidth="256.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Label" />
-            <Label text="Label" />
+            <Label id="gameplayTitleLabel" fx:id="gameplayTitleLabel" alignment="CENTER" prefHeight="15.0" prefWidth="788.0" text="Buzz Word">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Label>
+            <Label id="gameplayModeLabel" fx:id="gameplayModeLabel" alignment="CENTER" prefHeight="15.0" prefWidth="894.0" text="Dictionary Words" />
          </children>
       </VBox>
    </top>

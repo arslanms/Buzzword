@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+
+import java.net.URL;
 import java.util.Scanner;
 
 public class Main extends Application {
@@ -36,7 +38,17 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource(resource));
         primaryStage.setTitle("Buzz Word");
-        primaryStage.setScene(new Scene(root, 800, 500));
+        Scene scene = new Scene(root, 800, 500);
+
+        URL url = this.getClass().getResource("styles.css");
+        if (url == null) {
+            System.out.println("Resource not found. Aborting.");
+            System.exit(-1);
+        }
+        String css = url.toExternalForm();
+        scene.getStylesheets().add(css);
+
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 

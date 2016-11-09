@@ -1,4 +1,5 @@
 LIST OF IDs:
+*id is for CSS and fx-id is for the controller
 
 Gameplay:
 
@@ -25,3 +26,5 @@ id: targetScoreLabel
 
 id: levelLabel
 id: playResumeButton
+
+id: gameplayNode
