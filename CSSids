@@ -1,0 +1,27 @@
+LIST OF IDs:
+
+Gameplay:
+
+id: gameplayBorderPane fx-id: gameplayBorderPane
+id: gameplayTitleVBox fx-id: gameplayTitleVBox
+id: gameplayLeftVBox fx-id gameplayLeftVBox
+id: gameplayNodePane fx-id: gameplayNodePane
+id: gameplayRightVBox fx-id: gameplayRightVBox
+id: gameplayBottomVBox fx-id: gameplayBottomVBox
+
+id: gameplayTitleLabel fx-id: gameplayTitleLabel
+id: gameplayModeLabel fx-id: gameplayModeLabel
+id: gameplayProfileButton fx-id: gameplayProfileButton
+id: gameplayHomeButton fx-id: gameplayHomeButton
+
+id: gameplayExitButton
+id: gameplayTimerLabel
+id: gameplayTextField
+id: gameplayTable
+id: gameplayWordsColumn
+id: gameplayPointsColumn
+id: totalPointsLabel
+id: targetScoreLabel
+
+id: levelLabel
+id: playResumeButton
