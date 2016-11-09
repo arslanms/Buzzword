@@ -125,12 +125,12 @@
    <top>
       <VBox maxHeight="80.0" maxWidth="200.0" minHeight="80.0" minWidth="200.0" prefHeight="80.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Label contentDisplay="TOP" text="Buzz Word">
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="15.0" prefWidth="233.0" text="Buzz Word">
                <VBox.margin>
                   <Insets />
                </VBox.margin>
             </Label>
-            <Label text="Dictionary Words">
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="242.0" text="Dictionary Words">
                <VBox.margin>
                   <Insets />
                </VBox.margin>
