@@ -49,3 +49,14 @@
 #exitButton:hover {
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,1,1);
 }
+
+#totalPointsLabel, #gameplayTimerLabel, #targetScoreLabel {
+    -fx-background-color: aquamarine;
+    -fx-background-radius: 3 3 3 3;
+    -fx-smooth: true;
+}
+
+#gameplayNodeLabel {
+    -fx-text-fill: #FFF5C3;
+    -fx-font-weight: 600;
+}

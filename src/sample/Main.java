@@ -14,6 +14,10 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
+        //TODO: Change the id's for all of the FXML components to their correct names
+        //TODO: Place all the icons and images I use into one folder
+        //TODO: Remove the console input and create a dialog input
+
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the scene you want to display: ");
         System.out.println("1. Login\n2. Loggedin\n3. Level Selection\n4. Gameplay");
