@@ -70,3 +70,12 @@
 #modeComboBox .list-view {
     -fx-background-color: aliceblue;
 }
+
+#gameplayTable {
+    -fx-background-radius: 3 3 3 3;
+    -fx-background-color: #FFF5C3;
+}
+
+#gameplayTextField {
+    -fx-background-color: #FFF5C3;
+}
