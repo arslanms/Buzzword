@@ -38,7 +38,7 @@ public class Main extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource(resource));
         primaryStage.setTitle("Buzz Word");
-        Scene scene = new Scene(root, 800, 500);
+        Scene scene = new Scene(root, 825, 525);
 
         URL url = this.getClass().getResource("styles.css");
         if (url == null) {

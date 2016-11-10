@@ -2,438 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/LICENSE_OFL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoColorEmoji.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoEmoji-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoKufiArabic-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoKufiArabic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoMono-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoNaskhArabic-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoNaskhArabic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoNaskhArabicUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoNaskhArabicUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoNastaliqUrdu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSans-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSans-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSans-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSans-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansArmenian-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansArmenian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansAvestan-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBalinese-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBamum-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBatak-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBengali-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBengali-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBengaliUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBengaliUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBrahmi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBuginese-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansBuhid-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKjp-Black.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKjp-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKjp-DemiLight.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKjp-Light.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKjp-Medium.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKjp-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKjp-Thin.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKkr-Black.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKkr-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKkr-DemiLight.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKkr-Light.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKkr-Medium.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKkr-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKkr-Thin.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKsc-Black.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKsc-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKsc-DemiLight.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKsc-Light.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKsc-Medium.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKsc-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKsc-Thin.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKtc-Black.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKtc-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKtc-DemiLight.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKtc-Light.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKtc-Medium.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKtc-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCJKtc-Thin.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCanadianAboriginal-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCarian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCham-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCham-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCherokee-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCoptic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCuneiform-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansCypriot-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansDeseret-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansDevanagari-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansDevanagari-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansDevanagariUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansDevanagariUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansEgyptianHieroglyphs-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansEthiopic-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansEthiopic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGeorgian-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGeorgian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGlagolitic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGothic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGujarati-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGujarati-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGujaratiUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGujaratiUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGurmukhi-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGurmukhi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGurmukhiUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansGurmukhiUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansHanunoo-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansHebrew-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansHebrew-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansImperialAramaic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansInscriptionalPahlavi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansInscriptionalParthian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansJavanese-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKaithi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKannada-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKannada-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKannadaUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKannadaUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKayahLi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKharoshthi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKhmer-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKhmer-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKhmerUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansKhmerUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLao-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLao-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLaoUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLaoUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLepcha-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLimbu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLinearB-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLisu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLycian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansLydian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMalayalam-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMalayalam-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMalayalamUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMalayalamUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMandaic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMeeteiMayek-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMongolian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMonoCJKjp-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMonoCJKjp-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMonoCJKkr-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMonoCJKkr-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMonoCJKsc-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMonoCJKsc-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMonoCJKtc-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMonoCJKtc-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMyanmar-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMyanmar-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMyanmarUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansMyanmarUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansNKo-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansNewTaiLue-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOgham-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOlChiki-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOldItalic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOldPersian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOldSouthArabian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOldTurkic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOriya-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOriya-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOriyaUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOriyaUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansOsmanya-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansPhagsPa-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansPhoenician-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansRejang-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansRunic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSamaritan-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSaurashtra-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansShavian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSinhala-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSinhala-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSundanese-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSylotiNagri-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSymbols-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSyriacEastern-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSyriacEstrangela-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansSyriacWestern-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTagalog-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTagbanwa-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTaiLe-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTaiTham-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTaiViet-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTamil-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTamil-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTamilUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTamilUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTelugu-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTelugu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTeluguUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTeluguUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansThaana-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansThaana-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansThai-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansThai-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansThaiUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansThaiUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTibetan-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTibetan-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansTifinagh-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansUI-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansUI-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansUgaritic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansVai-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSansYi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerif-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerif-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerif-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerif-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifArmenian-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifArmenian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifBengali-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifBengali-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifDevanagari-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifDevanagari-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifGeorgian-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifGeorgian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifGujarati-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifGujarati-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifKannada-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifKannada-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifKhmer-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifKhmer-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifLao-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifLao-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifMalayalam-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifMalayalam-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifTamil-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifTamil-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifTelugu-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifTelugu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifThai-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Noto-hinted/NotoSerifThai-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/LICENSE_OFL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoColorEmoji.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoEmoji-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoKufiArabic-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoKufiArabic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoMono-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoNaskhArabic-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoNaskhArabic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoNaskhArabicUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoNaskhArabicUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoNastaliqUrdu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSans-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSans-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSans-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSans-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansArmenian-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansArmenian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansAvestan-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBalinese-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBamum-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBatak-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBengali-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBengali-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBengaliUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBengaliUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBrahmi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBuginese-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansBuhid-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKjp-Black.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKjp-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKjp-DemiLight.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKjp-Light.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKjp-Medium.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKjp-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKjp-Thin.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKkr-Black.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKkr-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKkr-DemiLight.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKkr-Light.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKkr-Medium.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKkr-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKkr-Thin.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKsc-Black.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKsc-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKsc-DemiLight.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKsc-Light.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKsc-Medium.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKsc-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKsc-Thin.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKtc-Black.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKtc-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKtc-DemiLight.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKtc-Light.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKtc-Medium.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKtc-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCJKtc-Thin.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCanadianAboriginal-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCarian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCham-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCham-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCherokee-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCoptic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCuneiform-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansCypriot-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansDeseret-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansDevanagari-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansDevanagari-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansDevanagariUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansDevanagariUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansEgyptianHieroglyphs-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansEthiopic-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansEthiopic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGeorgian-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGeorgian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGlagolitic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGothic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGujarati-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGujarati-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGujaratiUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGujaratiUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGurmukhi-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGurmukhi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGurmukhiUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansGurmukhiUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansHanunoo-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansHebrew-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansHebrew-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansImperialAramaic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansInscriptionalPahlavi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansInscriptionalParthian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansJavanese-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKaithi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKannada-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKannada-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKannadaUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKannadaUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKayahLi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKharoshthi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKhmer-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKhmer-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKhmerUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansKhmerUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLao-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLao-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLaoUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLaoUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLepcha-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLimbu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLinearB-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLisu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLycian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansLydian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMalayalam-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMalayalam-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMalayalamUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMalayalamUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMandaic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMeeteiMayek-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMongolian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMonoCJKjp-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMonoCJKjp-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMonoCJKkr-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMonoCJKkr-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMonoCJKsc-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMonoCJKsc-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMonoCJKtc-Bold.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMonoCJKtc-Regular.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMyanmar-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMyanmar-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMyanmarUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansMyanmarUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansNKo-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansNewTaiLue-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOgham-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOlChiki-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOldItalic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOldPersian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOldSouthArabian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOldTurkic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOriya-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOriya-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOriyaUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOriyaUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansOsmanya-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansPhagsPa-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansPhoenician-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansRejang-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansRunic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSamaritan-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSaurashtra-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansShavian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSinhala-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSinhala-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSundanese-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSylotiNagri-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSymbols-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSyriacEastern-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSyriacEstrangela-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansSyriacWestern-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTagalog-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTagbanwa-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTaiLe-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTaiTham-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTaiViet-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTamil-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTamil-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTamilUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTamilUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTelugu-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTelugu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTeluguUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTeluguUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansThaana-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansThaana-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansThai-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansThai-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansThaiUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansThaiUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTibetan-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTibetan-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansTifinagh-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansUI-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansUI-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansUI-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansUI-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansUgaritic-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansVai-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSansYi-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerif-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerif-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerif-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerif-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifArmenian-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifArmenian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifBengali-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifBengali-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifDevanagari-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifDevanagari-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifGeorgian-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifGeorgian-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifGujarati-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifGujarati-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifKannada-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifKannada-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifKhmer-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifKhmer-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifLao-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifLao-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifMalayalam-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifMalayalam-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifTamil-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifTamil-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifTelugu-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifTelugu-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifThai-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/Noto-hinted/NotoSerifThai-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-hdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-hdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-mdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-xhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-xxhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-xxxhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-mdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-xhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-xxhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/android/drawable-xxxhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/ios/ic_arrow_back.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/ios/ic_arrow_back.imageset/ic_arrow_back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/ios/ic_arrow_back.imageset/ic_arrow_back_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/ios/ic_arrow_back.imageset/ic_arrow_back_3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/web/ic_arrow_back_black_24dp_1x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_arrow_back_black_24dp/web/ic_arrow_back_black_24dp_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/android/drawable-hdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/android/drawable-mdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/android/drawable-xhdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/android/drawable-xxhdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/android/drawable-xxxhdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/ios/ic_cancel.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/ios/ic_cancel.imageset/ic_cancel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/ios/ic_cancel.imageset/ic_cancel_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/ios/ic_cancel.imageset/ic_cancel_3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/web/ic_cancel_black_24dp_1x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_cancel_black_24dp/web/ic_cancel_black_24dp_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/android/drawable-hdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/android/drawable-mdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/android/drawable-xhdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/android/drawable-xxhdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/android/drawable-xxxhdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/ios/ic_home.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/ios/ic_home.imageset/ic_home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/ios/ic_home.imageset/ic_home_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/ios/ic_home.imageset/ic_home_3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/web/ic_home_black_24dp_1x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/219Project/sample/images/ic_home_black_24dp/web/ic_home_black_24dp_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-hdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-hdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-mdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-xhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-xxhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-ldrtl-xxxhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-mdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-xhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-xxhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/android/drawable-xxxhdpi/ic_arrow_back_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/ios/ic_arrow_back.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/ios/ic_arrow_back.imageset/ic_arrow_back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/ios/ic_arrow_back.imageset/ic_arrow_back_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/ios/ic_arrow_back.imageset/ic_arrow_back_3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/web/ic_arrow_back_black_24dp_1x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_arrow_back_black_24dp/web/ic_arrow_back_black_24dp_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/android/drawable-hdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/android/drawable-mdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/android/drawable-xhdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/android/drawable-xxhdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/android/drawable-xxxhdpi/ic_cancel_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/ios/ic_cancel.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/ios/ic_cancel.imageset/ic_cancel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/ios/ic_cancel.imageset/ic_cancel_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/ios/ic_cancel.imageset/ic_cancel_3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/web/ic_cancel_black_24dp_1x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_cancel_black_24dp/web/ic_cancel_black_24dp_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/android/drawable-hdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/android/drawable-mdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/android/drawable-xhdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/android/drawable-xxhdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/android/drawable-xxxhdpi/ic_home_black_24dp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/ios/ic_home.imageset/Contents.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/ios/ic_home.imageset/ic_home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/ios/ic_home.imageset/ic_home_2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/ios/ic_home.imageset/ic_home_3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/web/ic_home_black_24dp_1x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sample/images/ic_home_black_24dp/web/ic_home_black_24dp_2x.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/sample/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/gameplay.fxml" afterPath="$PROJECT_DIR$/src/sample/gameplay.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/styles.css" afterPath="$PROJECT_DIR$/src/sample/styles.css" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -497,8 +143,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            <state relative-caret-position="285">
+              <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -509,8 +155,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+            <state relative-caret-position="390">
+              <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -1108,7 +754,7 @@
       <option name="presentableId" value="Default" />
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
-      <workItem from="1478642120725" duration="16562000" />
+      <workItem from="1478642120725" duration="18986000" />
     </task>
     <task id="LOCAL-00001" summary="First commit for 219 project. Made and edited multiple FXML files to be used as my GUIs.">
       <created>1478659826203</created>
@@ -1121,7 +767,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17864000" />
+    <option name="totallyTimeSpent" value="20288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -1244,8 +890,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+        <state relative-caret-position="285">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1254,8 +900,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+        <state relative-caret-position="390">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
           <folding />
         </state>
       </provider>

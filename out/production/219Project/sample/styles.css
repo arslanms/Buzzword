@@ -19,6 +19,14 @@
     -fx-smooth: true;
 }
 
+#gameplayProfileButton  {
+    -fx-graphic: url("./images/back_arrow/web/back_arrow_small.png");
+}
+
+#gameplayHomeButton {
+    -fx-graphic: url("./images/home/web/home_small.png");
+}
+
 #gameplayProfileButton:hover, #gameplayHomeButton:hover {
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,2,2 );
     -fx-background-color: linear-gradient(aquamarine, white);
@@ -30,5 +38,14 @@
 }
 
 #playResumeButton:hover {
-    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 1,1,1,1);
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,1,1);
+}
+
+#exitButton {
+    -fx-graphic: url("./images/cancel/web/cancel.png");
+    -fx-background-color: transparent;
+}
+
+#exitButton:hover {
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,1,1);
 }
