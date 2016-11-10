@@ -21,7 +21,7 @@
 
 #gameplayProfileButton:hover, #gameplayHomeButton:hover {
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,2,2 );
-    -fx-background-color: linear-gradient(aquamarine, aqua);
+    -fx-background-color: linear-gradient(aquamarine, white);
 }
 
 #playResumeButton {
@@ -30,5 +30,5 @@
 }
 
 #playResumeButton:hover {
-    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,2,2 );
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.5) , 1,1,1,1);
 }
