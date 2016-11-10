@@ -14,17 +14,17 @@
 
 <BorderPane fx:id="loginBorderPane" maxHeight="500.0" maxWidth="750.0" minHeight="500.0" minWidth="750.0" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <top>
-      <Label fx:id="buzzwordTitle" prefHeight="59.0" prefWidth="150.0" text="Buzz Word" BorderPane.alignment="CENTER">
+      <Label fx:id="buzzwordTitle" prefHeight="59.0" prefWidth="150.0" text="Buzz Word" underline="true" BorderPane.alignment="CENTER">
          <font>
-            <Font size="28.0" />
+            <Font size="26.0" />
          </font></Label>
    </top>
    <left>
       <VBox maxHeight="600.0" minHeight="384.0" prefHeight="412.0" prefWidth="120.0" BorderPane.alignment="BASELINE_LEFT">
          <children>
-            <Button maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Professaur" translateX="35.0" translateY="70.0" />
-            <ComboBox maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0" promptText="Select Mode" translateX="35.0" translateY="90.0" />
-            <Button maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Start Playing" translateX="35.0" translateY="110.0" />
+            <Button id="loggedInProfileButton" fx:id="loggedInProfileButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Professaur" translateX="35.0" translateY="70.0" />
+            <ComboBox id="modeComboBox" fx:id="modeComboBox" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0" promptText="Select Mode" translateX="35.0" translateY="90.0" />
+            <Button id="loggedInStartPlayingButton" fx:id="loggedInStartPlayingButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Start Playing" translateX="35.0" translateY="110.0" />
          </children>
       </VBox>
    </left>
@@ -130,4 +130,7 @@
          </children>
       </Pane>
    </center>
+   <right>
+      <Button id="exitButton" fx:id="exitButton" mnemonicParsing="false" translateX="-30.0" translateY="-245.0" BorderPane.alignment="CENTER" />
+   </right>
 </BorderPane>

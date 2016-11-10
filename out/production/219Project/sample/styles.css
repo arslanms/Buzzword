@@ -7,11 +7,12 @@
     -fx-font-weight: 600;
 }
 
-#gameplayBorderPane {
+#gameplayBorderPane, #loginBorderPane {
     -fx-background-color: coral;
 }
 
-#gameplayProfileButton, #gameplayHomeButton {
+#gameplayProfileButton, #gameplayHomeButton, #loginCreateProfileButton, #loginLoginButton, #loggedInProfileButton, #loggedInStartPlayingButton,
+    #modeComboBox{
     -fx-background-color: aquamarine;
     -fx-border-radius: 10%;
     -fx-stroke: darkcyan;
@@ -27,7 +28,8 @@
     -fx-graphic: url("./images/home/web/home_small.png");
 }
 
-#gameplayProfileButton:hover, #gameplayHomeButton:hover {
+#gameplayProfileButton:hover, #gameplayHomeButton:hover, #loginCreateProfileButton:hover, #loginLoginButton:hover,
+    #loggedInStartPlayingButton:hover, #loggedInProfileButton:hover, #modeComboBox:hover {
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,2,2 );
     -fx-background-color: linear-gradient(aquamarine, white);
 }
@@ -63,4 +65,8 @@
 
 #gameplayNode {
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,2,2 );
+}
+
+#modeComboBox .list-view {
+    -fx-background-color: aliceblue;
 }
