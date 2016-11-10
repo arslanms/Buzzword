@@ -33,98 +33,128 @@
          <children>
             <StackPane prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode1" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="B">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <StackPane layoutX="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode2" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="U">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <StackPane layoutX="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode3" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="B">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <StackPane layoutX="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode4" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
                </children>
             </StackPane>
             <StackPane layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode5" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="Z">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode6" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="Z">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode7" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode8" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
                </children>
             </StackPane>
             <StackPane layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode9" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode10" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode11" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="W">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode12" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="O">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <StackPane layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode13" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode14" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="A">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode15" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="R">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label text="Label" />
+                  <Circle id="gameplayNode" fx:id="gameplayNode16" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="D">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Label>
                </children>
             </StackPane>
          </children>
