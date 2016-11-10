@@ -1,3 +1,34 @@
+/*@font-face {*/
+    /*src: url("//home/arslan/IdeaProjects/219Project/src/sample/Noto-hinted/NotoMono-Regular.ttf");*/
+/*}*/
+
+.root {
+    -fx-font-family: monospace;
+    -fx-font-weight: 600;
+}
+
 #gameplayBorderPane {
+    -fx-background-color: coral;
+}
+
+#gameplayProfileButton, #gameplayHomeButton {
     -fx-background-color: aquamarine;
+    -fx-border-radius: 10%;
+    -fx-stroke: darkcyan;
+    -fx-animated: true;
+    -fx-smooth: true;
+}
+
+#gameplayProfileButton:hover, #gameplayHomeButton:hover {
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,2,2 );
+    -fx-background-color: linear-gradient(aquamarine, aqua);
+}
+
+#playResumeButton {
+    -fx-graphic: url("./images/pause_circle/web/pause_circle.png");
+    -fx-background-color: transparent;
+}
+
+#playResumeButton:hover {
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,2,2 );
 }
