@@ -22,7 +22,7 @@
       </VBox>
    </left>
    <center>
-      <Pane BorderPane.alignment="CENTER">
+      <Pane translateX="50.0" BorderPane.alignment="CENTER">
          <children>
             <StackPane prefHeight="150.0" prefWidth="200.0">
                <children>

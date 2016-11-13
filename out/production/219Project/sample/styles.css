@@ -20,7 +20,7 @@
     -fx-smooth: true;
 }
 
-#gameplayProfileButton  {
+#gameplayProfileButton, #loggedInProfileButton  {
     -fx-graphic: url("./images/back_arrow/web/back_arrow_small.png");
 }
 

@@ -21,7 +21,7 @@
       </VBox>
    </left>
    <center>
-      <Pane id="gameplayNodePane" fx:id="gameplayNodePane" BorderPane.alignment="CENTER">
+      <Pane id="gameplayNodePane" fx:id="gameplayNodePane" translateX="50.0" BorderPane.alignment="CENTER">
          <children>
             <StackPane prefHeight="150.0" prefWidth="200.0">
                <children>
