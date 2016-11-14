@@ -31,18 +31,34 @@ public class Main extends Application {
                 resource = "loggedin.fxml";
                 break;
             case 3:
-                resource = "levelselection.fxml";
+                resource = "levelselection-dictionarywords.fxml";
                 break;
             case 4:
+                resource = "levelselection-famouspeople.fxml";
+                break;
+            case 5:
+                resource = "levelselection-places.fxml";
+                break;
+            case 6:
+                resource = "levelselection-science.fxml";
+                break;
+            case 7:
                 resource = "gameplay.fxml";
                 break;
             default:
                 break;
         }
 
-        Parent root = FXMLLoader.load(getClass().getResource(resource));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
+        Parent root = loader.load();
+
+        Controller controller = loader.getController();
+
         primaryStage.setTitle("Buzz Word");
         Scene scene = new Scene(root, 825, 525);
+
+        if (resource.equals("loggedin.fxml"))
+            controller.addModes();
 
         URL url = this.getClass().getResource("styles.css");
         if (url == null) {

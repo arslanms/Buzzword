@@ -121,7 +121,7 @@
                   <Font size="26.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" prefHeight="15.0" prefWidth="242.0" text="Dictionary Words">
+            <Label alignment="CENTER" prefHeight="15.0" prefWidth="242.0" text="Science">
                <VBox.margin>
                   <Insets />
                </VBox.margin>

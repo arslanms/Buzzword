@@ -12,7 +12,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-<BorderPane fx:id="loginBorderPane" maxHeight="500.0" maxWidth="750.0" minHeight="500.0" minWidth="750.0" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:id="loginBorderPane" maxHeight="500.0" maxWidth="750.0" minHeight="500.0" minWidth="750.0" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <top>
       <Label fx:id="buzzwordTitle" prefHeight="59.0" prefWidth="150.0" text="Buzz Word" underline="true" BorderPane.alignment="CENTER">
          <font>
@@ -52,7 +52,7 @@
             <StackPane layoutX="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode3" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="B">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -133,7 +133,7 @@
             <StackPane layoutX="75.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode14" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="A">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
