@@ -20,7 +20,8 @@ public class Main extends Application {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the scene you want to display: ");
-        System.out.println("1. Login\n2. Loggedin\n3. Level Selection\n4. Gameplay");
+        System.out.println("1. Login\n2. Loggedin\n3. Level Selection (Dictionary Words)\n4. Level Selection (Famous People)\n" +
+                "5. Level Selection (Places)\n6. Level Selection (Science)\n7. Gameplay");
         int choice = input.nextInt();
         String resource = "";
         switch (choice) {
@@ -59,6 +60,9 @@ public class Main extends Application {
 
         if (resource.equals("loggedin.fxml"))
             controller.addModes();
+
+        if (resource.equals("gameplay.fxml"))
+            controller.addTable();
 
         URL url = this.getClass().getResource("styles.css");
         if (url == null) {

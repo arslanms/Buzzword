@@ -174,7 +174,7 @@
             <TableView id="gameplayTable" fx:id="gameplayTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="221.0">
               <columns>
                 <TableColumn id="gameplayWordsColumn" fx:id="gameplayWordsColumn" prefWidth="140.0" text="Words" />
-                <TableColumn id="gameplayPoints" fx:id="gameplayPoints" prefWidth="82.0" text="Points" />
+                <TableColumn id="gameplayPoints" fx:id="gameplayPointsColumn" prefWidth="82.0" text="Points" />
               </columns>
                <VBox.margin>
                   <Insets bottom="20.0" />
