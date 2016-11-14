@@ -7,12 +7,12 @@
     -fx-font-weight: 600;
 }
 
-#gameplayBorderPane, #loginBorderPane {
+#gameplayBorderPane, #loginBorderPane, #loginDialogPane {
     -fx-background-color: coral;
 }
 
 #gameplayProfileButton, #gameplayHomeButton, #loginCreateProfileButton, #loginLoginButton, #loggedInProfileButton, #loggedInStartPlayingButton,
-    #modeComboBox{
+    #modeComboBox, #loginDialogCancel, #loginDialogLogin{
     -fx-background-color: aquamarine;
     -fx-border-radius: 10%;
     -fx-stroke: darkcyan;
@@ -29,7 +29,7 @@
 }
 
 #gameplayProfileButton:hover, #gameplayHomeButton:hover, #loginCreateProfileButton:hover, #loginLoginButton:hover,
-    #loggedInStartPlayingButton:hover, #loggedInProfileButton:hover, #modeComboBox:hover {
+    #loggedInStartPlayingButton:hover, #loggedInProfileButton:hover, #modeComboBox:hover, #loginDialogCancel:hover, #loginDialogLogin:hover{
     -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 1,1,2,2 );
     -fx-background-color: linear-gradient(aquamarine, white);
 }
@@ -76,6 +76,6 @@
     -fx-background-color: #FFF5C3;
 }
 
-#gameplayTextField {
+#gameplayTextField, #usernameTextField, #passwordTextField {
     -fx-background-color: #FFF5C3;
 }

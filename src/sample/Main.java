@@ -21,7 +21,7 @@ public class Main extends Application {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the scene you want to display: ");
         System.out.println("1. Login\n2. Loggedin\n3. Level Selection (Dictionary Words)\n4. Level Selection (Famous People)\n" +
-                "5. Level Selection (Places)\n6. Level Selection (Science)\n7. Gameplay");
+                "5. Level Selection (Places)\n6. Level Selection (Science)\n7. Gameplay\n8. Login Dialog");
         int choice = input.nextInt();
         String resource = "";
         switch (choice) {
@@ -46,6 +46,9 @@ public class Main extends Application {
             case 7:
                 resource = "gameplay.fxml";
                 break;
+            case 8:
+                resource = "logindialog.fxml";
+                break;
             default:
                 break;
         }
@@ -56,7 +59,21 @@ public class Main extends Application {
         Controller controller = loader.getController();
 
         primaryStage.setTitle("Buzz Word");
-        Scene scene = new Scene(root, 825, 525);
+
+        int width;
+        int height;
+
+        if (!resource.equals("logindialog.fxml"))    {
+            width = 825;
+            height = 525;
+        }
+        else    {
+            width = 300;
+            height = 300;
+        }
+
+
+        Scene scene = new Scene(root, width, height);
 
         if (resource.equals("loggedin.fxml"))
             controller.addModes();
