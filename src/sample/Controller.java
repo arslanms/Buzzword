@@ -1,7 +1,6 @@
 package sample;
 
-import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.property.SimpleStringProperty;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -9,10 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
@@ -28,12 +24,13 @@ public class Controller {
     private int stageHeight = 525;
 
     @FXML
-    public ComboBox modeComboBox;
+    public ComboBox<String> modeComboBox;
     public TableView<TableElement> gameplayTable;
     public ObservableList<TableElement> tabledata;
     public TableColumn gameplayWordsColumn;
     public TableColumn gameplayPointsColumn;
     public Stage loginStage;
+    public Label levelSelectionModeTitle;
 
     public void addModes()  {
         modeComboBox.getItems().clear();
@@ -88,9 +85,30 @@ public class Controller {
     @FXML
     public void openLevelSelection(ActionEvent event) throws IOException   {
 
-        Parent parent = FXMLLoader.load(getClass().getResource("levelselection-science.fxml"));
-        changeScene(parent, event);
+        if (modeComboBox.getSelectionModel().getSelectedItem() == null) {
+            System.out.println("No mode selected.");
+        } else {
 
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("levelselection.fxml"));
+            Parent parent = fxmlLoader.load();
+            changeScene(parent, event);
+            setLevelSelection(fxmlLoader.getController());
+
+        }
+
+    }
+
+    private void setLevelSelection(Controller controller)    {
+
+        levelSelectionModeTitle = controller.levelSelectionModeTitle;
+
+        String modeTitle = modeComboBox.getValue();
+        levelSelectionModeTitle.setText(modeTitle);
+    }
+
+    @FXML
+    public void homeButtonClicked() {
+        levelSelectionModeTitle.setText("bruh");
     }
 
     private void changeScene(Parent parent, ActionEvent event)  {

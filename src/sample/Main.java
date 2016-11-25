@@ -25,6 +25,7 @@ public class Main extends Application {
 
         Controller controller = loader.getController();
 
+
         primaryStage.setTitle("Buzz Word");
 
         int width = 825;
@@ -41,6 +42,8 @@ public class Main extends Application {
         scene.getStylesheets().add(css);
 
         primaryStage.setScene(scene);
+
+        controller.addModes();
         primaryStage.show();
     }
 
