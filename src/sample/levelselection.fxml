@@ -27,44 +27,64 @@
             <StackPane prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode1" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="1">
+                  <Label id="gameplayNodeLabel" fx:id="levelSelectNodeLabel1">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
+                  <ImageView fx:id="levelSelectNodeLock1" fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/ic_lock_black_24dp/web/ic_lock_black_24dp_2x.png" />
+                     </image>
+                  </ImageView>
                </children>
             </StackPane>
             <StackPane layoutX="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode2" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="2">
+                  <Label id="gameplayNodeLabel" fx:id="levelSelectNodeLabel2">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
+                  <ImageView fx:id="levelSelectNodeLock2" fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/ic_lock_black_24dp/web/ic_lock_black_24dp_2x.png" />
+                     </image>
+                  </ImageView>
                </children>
             </StackPane>
             <StackPane layoutX="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode3" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="3">
+                  <Label id="gameplayNodeLabel" fx:id="levelSelectNodeLabel3">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
+                  <ImageView fx:id="levelSelectNodeLock3" fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/ic_lock_black_24dp/web/ic_lock_black_24dp_2x.png" />
+                     </image>
+                  </ImageView>
                </children>
             </StackPane>
             <StackPane layoutX="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode4" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="4" />
+                  <Label id="gameplayNodeLabel" fx:id="levelSelectNodeLabel4" />
+                  <ImageView fx:id="levelSelectNodeLock4" fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/ic_lock_black_24dp/web/ic_lock_black_24dp_2x.png" />
+                     </image>
+                  </ImageView>
                </children>
             </StackPane>
             <StackPane layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode5" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel">
+                  <Label id="gameplayNodeLabel" fx:id="levelSelectNodeLabel5">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
-                  <ImageView fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="levelSelectNodeLock5" fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/ic_lock_black_24dp/web/ic_lock_black_24dp_2x.png" />
                      </image>
@@ -74,11 +94,11 @@
             <StackPane layoutX="75.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode6" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel">
+                  <Label id="gameplayNodeLabel" fx:id="levelSelectNodeLabel6">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
-                  <ImageView fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="levelSelectNodeLock6" fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/ic_lock_black_24dp/web/ic_lock_black_24dp_2x.png" />
                      </image>
@@ -88,8 +108,8 @@
             <StackPane layoutX="150.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode7" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
-                  <ImageView fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                  <Label id="gameplayNodeLabel" fx:id="levelSelectNodeLabel7" />
+                  <ImageView fx:id="levelSelectNodeLock7" fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/ic_lock_black_24dp/web/ic_lock_black_24dp_2x.png" />
                      </image>
@@ -99,8 +119,8 @@
             <StackPane layoutX="225.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode8" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
-                  <ImageView fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+                  <Label id="gameplayNodeLabel" fx:id="levelSelectNodeLabel8" />
+                  <ImageView fx:id="levelSelectNodeLock8" fitHeight="33.0" fitWidth="38.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/ic_lock_black_24dp/web/ic_lock_black_24dp_2x.png" />
                      </image>
