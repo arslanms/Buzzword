@@ -18,40 +18,7 @@ public class Main extends Application {
         //TODO: Place all the icons and images I use into one folder
         //TODO: Remove the console input and create a dialog input
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter the scene you want to display: ");
-        System.out.println("1. Login\n2. Loggedin\n3. Level Selection (Dictionary Words)\n4. Level Selection (Famous People)\n" +
-                "5. Level Selection (Places)\n6. Level Selection (Science)\n7. Gameplay\n8. Login Dialog");
-        int choice = input.nextInt();
-        String resource = "";
-        switch (choice) {
-            case 1:
-                resource = "login.fxml";
-                break;
-            case 2:
-                resource = "loggedin.fxml";
-                break;
-            case 3:
-                resource = "levelselection-dictionarywords.fxml";
-                break;
-            case 4:
-                resource = "levelselection-famouspeople.fxml";
-                break;
-            case 5:
-                resource = "levelselection-places.fxml";
-                break;
-            case 6:
-                resource = "levelselection-science.fxml";
-                break;
-            case 7:
-                resource = "gameplay.fxml";
-                break;
-            case 8:
-                resource = "logindialog.fxml";
-                break;
-            default:
-                break;
-        }
+        String resource = "login.fxml";
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
         Parent root = loader.load();
@@ -60,26 +27,10 @@ public class Main extends Application {
 
         primaryStage.setTitle("Buzz Word");
 
-        int width;
-        int height;
-
-        if (!resource.equals("logindialog.fxml"))    {
-            width = 825;
-            height = 525;
-        }
-        else    {
-            width = 300;
-            height = 300;
-        }
-
+        int width = 825;
+        int height = 525;
 
         Scene scene = new Scene(root, width, height);
-
-        if (resource.equals("loggedin.fxml"))
-            controller.addModes();
-
-        if (resource.equals("gameplay.fxml"))
-            controller.addTable();
 
         URL url = this.getClass().getResource("styles.css");
         if (url == null) {
