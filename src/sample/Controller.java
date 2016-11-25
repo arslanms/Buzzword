@@ -6,6 +6,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
@@ -14,11 +15,17 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import javafx.event.ActionEvent;
+
 
 import java.io.IOException;
 import java.net.URL;
 
+
 public class Controller {
+
+    private int stageWidth = 825;
+    private int stageHeight = 525;
 
     @FXML
     public ComboBox modeComboBox;
@@ -49,6 +56,7 @@ public class Controller {
         tabledata.addAll(element1, element2, element3);
     }
 
+    @FXML
     public void openLoginDialog() throws IOException {
 
         loginStage = new Stage();
@@ -77,5 +85,29 @@ public class Controller {
         loginStage.showAndWait();
     }
 
+    @FXML
+    public void openLevelSelection(ActionEvent event) throws IOException   {
+
+        Parent parent = FXMLLoader.load(getClass().getResource("levelselection-science.fxml"));
+        changeScene(parent, event);
+
+    }
+
+    private void changeScene(Parent parent, ActionEvent event)  {
+        Scene scene = new Scene(parent, stageWidth, stageHeight);
+        Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        appStage.setTitle("BuzzWord");
+
+        URL url = this.getClass().getResource("styles.css");
+        if (url == null) {
+            System.out.println("Resource not found. Aborting.");
+            System.exit(-1);
+        }
+        String css = url.toExternalForm();
+        scene.getStylesheets().add(css);
+
+        appStage.setScene(scene);
+        appStage.show();
+    }
 
 }
