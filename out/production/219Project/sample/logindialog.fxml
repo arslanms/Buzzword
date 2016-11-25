@@ -15,12 +15,12 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField id="usernameTextField" maxHeight="25.0" maxWidth="200.0" minHeight="25.0" minWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Username" translateX="50.0">
+            <TextField id="usernameTextField" fx:id="usernameTextField" maxHeight="25.0" maxWidth="200.0" minHeight="25.0" minWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Username" translateX="50.0">
                <VBox.margin>
                   <Insets top="50.0" />
                </VBox.margin>
             </TextField>
-            <PasswordField id="passwordTextField" maxHeight="25.0" maxWidth="200.0" minHeight="25.0" minWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" translateX="50.0">
+            <PasswordField id="passwordTextField" fx:id="passwordTextField" maxHeight="25.0" maxWidth="200.0" minHeight="25.0" minWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Password" translateX="50.0">
                <VBox.margin>
                   <Insets top="50.0" />
                </VBox.margin>
@@ -31,7 +31,7 @@
    <bottom>
       <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button id="loginDialogLogin" alignment="CENTER" mnemonicParsing="false" text="Login" translateX="75.0">
+            <Button id="loginDialogLogin" fx:id="createProfileDialog" alignment="CENTER" mnemonicParsing="false" onAction="#createProfile" text="Login" translateX="75.0">
                <HBox.margin>
                   <Insets top="10.0" />
                </HBox.margin>

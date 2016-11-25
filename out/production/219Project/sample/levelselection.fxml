@@ -24,9 +24,9 @@
    <center>
       <Pane translateX="50.0" BorderPane.alignment="CENTER">
          <children>
-            <StackPane prefHeight="150.0" prefWidth="200.0">
+            <StackPane onMouseClicked="#clickLevelSelectNode" prefHeight="150.0" prefWidth="200.0">
                <children>
-                  <Circle id="gameplayNode" fx:id="gameplayNode1" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle id="gameplayNode" fx:id="levelSelectNodeCircle1" fill="#505050" onMouseMoved="#clickLevelSelectNode" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="levelSelectNodeLabel1">
                      <font>
                         <Font size="17.0" />

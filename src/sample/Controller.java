@@ -11,12 +11,16 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Path;
 
 
 public class Controller {
@@ -38,6 +42,9 @@ public class Controller {
             levelSelectNodeLock5, levelSelectNodeLock6, levelSelectNodeLock7, levelSelectNodeLock8;
     public Label[] levelSelectLabels;
     public ImageView[] levelSelectLocks;
+    public Circle levelSelectNodeCircle1;
+    public Button exitButton;
+    public TextField usernameTextField, passwordTextField;
 
     public void addModes()  {
         modeComboBox.getItems().clear();
@@ -105,6 +112,38 @@ public class Controller {
 
     }
 
+    @FXML
+    public void createProfile() {
+
+        String username = usernameTextField.getText();
+        String password = passwordTextField.getText();
+
+        if (username == null || password == null)   {
+            System.out.println("no shit");
+        }
+        else {
+            File file = new File(username);
+            FileController fileController = new FileController();
+
+            int[][] modes = new int[4][8];
+
+            for (int i = 0; i < modes.length; i++)  {
+                for (int j = 0; j < modes[i].length; j++)   {
+                    modes[i][j] = -1;
+                }
+            }
+
+            try {
+                BuzzData data = new BuzzData(username, password, modes);
+                fileController.saveData(data, file);
+            }
+            catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
     private void setLevelSelection(Controller controller)    {
 
         levelSelectionModeTitle = controller.levelSelectionModeTitle;
@@ -165,6 +204,11 @@ public class Controller {
 
 
 
+    }
+
+    @FXML
+    public void clickLevelSelectNode()  {
+        System.out.println("yo");
     }
 
     @FXML

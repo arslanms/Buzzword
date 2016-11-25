@@ -18,7 +18,7 @@ public class Main extends Application {
         //TODO: Place all the icons and images I use into one folder
         //TODO: Remove the console input and create a dialog input
 
-        String resource = "loggedin.fxml";
+        String resource = "login.fxml";
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
         Parent root = loader.load();
@@ -43,7 +43,7 @@ public class Main extends Application {
 
         primaryStage.setScene(scene);
 
-        controller.addModes();
+        //controller.addModes();
         primaryStage.show();
     }
 
