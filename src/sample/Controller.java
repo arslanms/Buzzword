@@ -29,6 +29,7 @@ public class Controller {
 
     private int stageWidth = 825;
     private int stageHeight = 525;
+    Player player;
 
     @FXML
     public ComboBox<String> modeComboBox;
@@ -48,6 +49,7 @@ public class Controller {
     public Circle levelSelectNodeCircle1;
     public Button exitButton;
     public TextField profileUsernameField, profilePasswordField, loginUsernameField, loginPasswordField;
+    public Button loginLoginButton;
 
     public void addModes()  {
         modeComboBox.getItems().clear();
@@ -71,7 +73,7 @@ public class Controller {
     }
 
     @FXML
-    public void openLoginDialog() throws IOException {
+    public void openLoginDialog(ActionEvent event) throws IOException {
 
         loginStage = new Stage();
 
@@ -174,13 +176,17 @@ public class Controller {
             }
         }
 
-        ((Node)(event.getSource())).getScene().getWindow().hide();
+        Stage stage = (Stage) ((Node)(event.getSource())).getScene().getWindow();
+        stage.close();
 
     }
 
     @FXML
     public void closeWindow(ActionEvent event)   {
-        ((Node)(event.getSource())).getScene().getWindow().hide();
+
+        Stage stage = (Stage) ((Node)(event.getSource())).getScene().getWindow();
+        stage.close();
+
     }
 
     @FXML
@@ -190,7 +196,14 @@ public class Controller {
         changeScene(parent, event, fxmlLoader);
         Controller controller = fxmlLoader.getController();
         modeComboBox = controller.modeComboBox;
-        modeComboBox.getItems();
+        addModes();
+    }
+
+    @FXML
+    public void logout(ActionEvent event)   throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
+        Parent parent = fxmlLoader.load();
+        changeScene(parent, event, fxmlLoader);
     }
 
     @FXML
@@ -199,10 +212,13 @@ public class Controller {
         BuzzData data = new BuzzData();
         boolean success = fileController.loadData(loginUsernameField.getText(), loginPasswordField.getText(), data);
         if (success)    {
-            ((Node)(event.getSource())).getScene().getWindow().hide();
+            Stage stage = (Stage) ((Node)(event.getSource())).getScene().getWindow();
+            stage.close();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("loggedin.fxml"));
             Parent parent = fxmlLoader.load();
             changeScene(parent, event, fxmlLoader);
+            player = new Player(data);
+            System.out.println(data.getPassword());
         }
         else {
             System.out.println("Cannot login");
@@ -214,6 +230,7 @@ public class Controller {
         levelSelectionModeTitle = controller.levelSelectionModeTitle;
 
         String modeTitle = modeComboBox.getValue();
+        int modeIndex = modeComboBox.getSelectionModel().getSelectedIndex();
         levelSelectionModeTitle.setText(modeTitle);
 
         levelSelectNodeLabel1 = controller.levelSelectNodeLabel1;
@@ -256,18 +273,21 @@ public class Controller {
         levelSelectLocks[6] = levelSelectNodeLock7;
         levelSelectLocks[7] = levelSelectNodeLock8;
 
-        for (int i = 0; i < 1; i++) {
-            levelSelectLabels[i].setText(Integer.toString(i+1));
-            levelSelectLocks[i].setVisible(false);
+        int[][] modes = player.getData().getModes();
+        int counter = 0;
+
+        while (modes[modeIndex][counter] != -1 && counter < 8)  {
+            levelSelectLabels[counter].setText(Integer.toString(counter));
+            levelSelectLocks[counter].setVisible(false);
+            counter++;
         }
 
-        for (int i = 1; i < 8; i++) {
-            levelSelectLabels[i].setText("");
-            levelSelectLocks[i].setVisible(true);
+        if (counter < 8)    {
+            for (int i = counter; i < 8; i++)   {
+                levelSelectLabels[i].setText("");
+                levelSelectLocks[i].setVisible(true);
+            }
         }
-
-
-
 
     }
 
@@ -288,17 +308,26 @@ public class Controller {
         appStage.show();
     }
 
-    private String encryptPassword(String password) {
-        StringBuffer passwordBuffer = new StringBuffer(password);
+    private void changeScene(Parent parent, Stage appStage, FXMLLoader fxmlLoader)  {
+        Scene scene = new Scene(parent, stageWidth, stageHeight);
+        appStage.setTitle("BuzzWord");
 
-        for (int i = 0; i < password.length(); i++) {
-            int passwordChar = password.charAt(i);
-            passwordChar *= 9;
-
-            passwordBuffer.setCharAt(i, (char)passwordChar);
+        URL url = this.getClass().getResource("styles.css");
+        if (url == null) {
+            System.out.println("Resource not found. Aborting.");
+            System.exit(-1);
         }
+        String css = url.toExternalForm();
+        scene.getStylesheets().add(css);
 
-        return passwordBuffer.toString();
+        appStage.setScene(scene);
+        appStage.show();
+    }
+
+    @FXML
+    public void exitApplication(ActionEvent event)  {
+        Stage stage = (Stage) ((Node)(event.getSource())).getScene().getWindow();
+        stage.close();
     }
 
 }

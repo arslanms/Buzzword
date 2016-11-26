@@ -31,7 +31,7 @@ public class FileController {
         }
 
         JsonObject jsonObject = Json.createObjectBuilder().add("Username", data.getUsername())
-                .add("Password", data.getPassword())
+                .add("Password", encryptPassword(data.getPassword()))
                 .add("Mode 1", mode1)
                 .add("Mode 2", mode2)
                 .add("Mode 3", mode3)
@@ -65,6 +65,7 @@ public class FileController {
 
         String jsonUsername = jsonObject.getString("Username");
         String jsonPassword = jsonObject.getString("Password");
+        jsonPassword = decryptPassword(jsonPassword);
 
         if (!password.equals(jsonPassword)) {
             return false;
@@ -101,4 +102,29 @@ public class FileController {
         return jsonObject;
     }
 
+    private String encryptPassword(String password) {
+        StringBuffer passwordBuffer = new StringBuffer(password);
+
+        for (int i = 0; i < password.length(); i++) {
+            int passwordChar = password.charAt(i);
+            passwordChar *= 9;
+
+            passwordBuffer.setCharAt(i, (char)passwordChar);
+        }
+
+        return passwordBuffer.toString();
+    }
+
+    private String decryptPassword(String password) {
+        StringBuffer passwordBuffer = new StringBuffer(password);
+
+        for (int i = 0; i < password.length(); i++) {
+            int passwordChar = password.charAt(i);
+            passwordChar /= 9;
+
+            passwordBuffer.setCharAt(i, (char) passwordChar);
+        }
+
+        return passwordBuffer.toString();
+    }
 }

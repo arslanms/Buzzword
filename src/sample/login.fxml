@@ -159,6 +159,6 @@
       </Pane>
    </center>
    <right>
-      <Button id="exitButton" fx:id="exitButton" mnemonicParsing="false" translateX="-30.0" translateY="-245.0" BorderPane.alignment="CENTER" />
+      <Button id="exitButton" fx:id="exitButton" mnemonicParsing="false" onAction="#exitApplication" translateX="-30.0" translateY="-245.0" BorderPane.alignment="CENTER" />
    </right>
 </BorderPane>
