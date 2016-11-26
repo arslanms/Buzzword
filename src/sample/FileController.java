@@ -53,8 +53,52 @@ public class FileController {
         PrintWriter pw = new PrintWriter(to.toString());
         pw.write(prettyPrinted);
         pw.close();
+    }
 
+    public boolean loadData(String username, String password, BuzzData data)  throws IOException {
+        File file = new File(username + ".json");
+        if (!file.exists()) {
+            return false;
+        }
 
+        JsonObject jsonObject = loadJsonFile(username + ".json");
+
+        String jsonUsername = jsonObject.getString("Username");
+        String jsonPassword = jsonObject.getString("Password");
+
+        if (!password.equals(jsonPassword)) {
+            return false;
+        }
+
+        JsonArray mode1 = jsonObject.getJsonArray("Mode 1");
+        JsonArray mode2 = jsonObject.getJsonArray("Mode 2");
+        JsonArray mode3 = jsonObject.getJsonArray("Mode 3");
+        JsonArray mode4 = jsonObject.getJsonArray("Mode 4");
+
+        int[][] modes = new int[4][8];
+
+        for (int i = 0; i < modes.length; i++) {
+            int counter = 0;
+            for (JsonValue obj : mode1) {
+                modes[i][counter] = Integer.parseInt(obj.toString());
+                counter++;
+            }
+        }
+
+        data.setModes(modes);
+        data.setUsername(jsonUsername);
+        data.setPassword(jsonPassword);
+
+        return true;
+    }
+
+    private JsonObject loadJsonFile(String path) throws IOException {
+        InputStream is = new FileInputStream(path);
+        JsonReader jsonReader = Json.createReader(is);
+        JsonObject jsonObject = jsonReader.readObject();
+        jsonReader.close();
+        is.close();
+        return jsonObject;
     }
 
 }

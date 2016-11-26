@@ -15,6 +15,10 @@ public class BuzzData {
         this.modes = modes;
     }
 
+    public BuzzData()   {
+
+    }
+
     public String getUsername() {
         return username;
     }

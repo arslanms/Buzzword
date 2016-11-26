@@ -1,6 +1,7 @@
 package sample;
 
 
+import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -11,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
@@ -35,6 +37,7 @@ public class Controller {
     public TableColumn gameplayWordsColumn;
     public TableColumn gameplayPointsColumn;
     public Stage loginStage;
+    public Stage profileStage;
     public Label levelSelectionModeTitle;
     public Label levelSelectNodeLabel1, levelSelectNodeLabel2, levelSelectNodeLabel3, levelSelectNodeLabel4,
             levelSelectNodeLabel5, levelSelectNodeLabel6, levelSelectNodeLabel7, levelSelectNodeLabel8;
@@ -44,7 +47,7 @@ public class Controller {
     public ImageView[] levelSelectLocks;
     public Circle levelSelectNodeCircle1;
     public Button exitButton;
-    public TextField usernameTextField, passwordTextField;
+    public TextField profileUsernameField, profilePasswordField, loginUsernameField, loginPasswordField;
 
     public void addModes()  {
         modeComboBox.getItems().clear();
@@ -77,7 +80,7 @@ public class Controller {
         FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
         Parent root = loader.load();
 
-        loginStage.setTitle("Login");
+        loginStage.setTitle("Create Profile");
 
         int width = 300;
         int height = 300;
@@ -97,6 +100,35 @@ public class Controller {
     }
 
     @FXML
+    public void openProfileDialog() throws IOException {
+
+        profileStage = new Stage();
+
+        String resource = "profiledialog.fxml";
+
+        FXMLLoader loader = new FXMLLoader(getClass().getResource(resource));
+        Parent root = loader.load();
+
+        profileStage.setTitle("Create Profile");
+
+        int width = 300;
+        int height = 300;
+
+        Scene scene = new Scene(root, width, height);
+
+        URL url = this.getClass().getResource("styles.css");
+        if (url == null) {
+            System.out.println("Resource not found. Aborting.");
+            System.exit(-1);
+        }
+        String css = url.toExternalForm();
+        scene.getStylesheets().add(css);
+
+        profileStage.setScene(scene);
+        profileStage.showAndWait();
+    }
+
+    @FXML
     public void openLevelSelection(ActionEvent event) throws IOException   {
 
         if (modeComboBox.getSelectionModel().getSelectedItem() == null) {
@@ -113,16 +145,16 @@ public class Controller {
     }
 
     @FXML
-    public void createProfile() {
+    public void createProfile(ActionEvent event) {
 
-        String username = usernameTextField.getText();
-        String password = passwordTextField.getText();
+        String username = profileUsernameField.getText();
+        String password = profilePasswordField.getText();
 
         if (username == null || password == null)   {
             System.out.println("no shit");
         }
         else {
-            File file = new File(username);
+            File file = new File(username + ".json");
             FileController fileController = new FileController();
 
             int[][] modes = new int[4][8];
@@ -142,6 +174,39 @@ public class Controller {
             }
         }
 
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+
+    }
+
+    @FXML
+    public void closeWindow(ActionEvent event)   {
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+    }
+
+    @FXML
+    public void openHome(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("loggedin.fxml"));
+        Parent parent = fxmlLoader.load();
+        changeScene(parent, event, fxmlLoader);
+        Controller controller = fxmlLoader.getController();
+        modeComboBox = controller.modeComboBox;
+        modeComboBox.getItems();
+    }
+
+    @FXML
+    public void userLogin(ActionEvent event) throws IOException {
+        FileController fileController = new FileController();
+        BuzzData data = new BuzzData();
+        boolean success = fileController.loadData(loginUsernameField.getText(), loginPasswordField.getText(), data);
+        if (success)    {
+            ((Node)(event.getSource())).getScene().getWindow().hide();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("loggedin.fxml"));
+            Parent parent = fxmlLoader.load();
+            changeScene(parent, event, fxmlLoader);
+        }
+        else {
+            System.out.println("Cannot login");
+        }
     }
 
     private void setLevelSelection(Controller controller)    {
@@ -206,16 +271,6 @@ public class Controller {
 
     }
 
-    @FXML
-    public void clickLevelSelectNode()  {
-        System.out.println("yo");
-    }
-
-    @FXML
-    public void homeButtonClicked() {
-        levelSelectionModeTitle.setText("bruh");
-    }
-
     private void changeScene(Parent parent, ActionEvent event, FXMLLoader fxmlLoader)  {
         Scene scene = new Scene(parent, stageWidth, stageHeight);
         Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -231,6 +286,19 @@ public class Controller {
 
         appStage.setScene(scene);
         appStage.show();
+    }
+
+    private String encryptPassword(String password) {
+        StringBuffer passwordBuffer = new StringBuffer(password);
+
+        for (int i = 0; i < password.length(); i++) {
+            int passwordChar = password.charAt(i);
+            passwordChar *= 9;
+
+            passwordBuffer.setCharAt(i, (char)passwordChar);
+        }
+
+        return passwordBuffer.toString();
     }
 
 }
