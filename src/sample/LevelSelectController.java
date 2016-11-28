@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
@@ -31,6 +32,8 @@ public class LevelSelectController implements ParentController, Initializable {
             levelSelectNodeLabel5, levelSelectNodeLabel6, levelSelectNodeLabel7, levelSelectNodeLabel8;
     public ImageView levelSelectNodeLock1, levelSelectNodeLock2, levelSelectNodeLock3, levelSelectNodeLock4,
             levelSelectNodeLock5, levelSelectNodeLock6, levelSelectNodeLock7, levelSelectNodeLock8;
+    @FXML private Button levelSelectionLogout;
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -64,13 +67,32 @@ public class LevelSelectController implements ParentController, Initializable {
         else {
             Label level = (Label) clickedLabel.getChildren().get(1);
             int clickedLevel = Integer.parseInt(level.getText());
-            System.out.println(clickedLevel);
+            System.out.println("Level clicked: " + clickedLevel);
 
             controller.getPlayer().setCurrentLevel(clickedLevel);
 
             controller.getGameplayController().setGameplayModeLabelText(controller.getGameMode());
             controller.getGameplayController().setLevelLabelText("Level " + clickedLevel);
-            
+
+            Grid grid = new Grid();
+            grid.getDictionary().readDictionary();
+
+            controller.getGameplayController().initLabels();
+
+            String[][] gridArray = grid.getGrid();
+            Label[] labels = controller.getGameplayController().getLabels();
+
+            for (int i = 0; i < 4; i++) {
+                for (int j = 0; j < 4; j++) {
+                    labels[4*i + j].setText(gridArray[i][j]);
+                }
+            }
+
+            //grid.displayWords();
+
+            controller.getGameplayController().setTargetScoreLabelText("Target Score: " + grid.getTargetScore());
+
+            controller.getGameplayController().setGameplayLogoutText(controller.getData().getUsername());
             controller.setScene(ParentController.scene4ID);
         }
     }
@@ -142,5 +164,9 @@ public class LevelSelectController implements ParentController, Initializable {
 
     public void setNodeLocks(ImageView[] nodeLocks) {
         this.nodeLocks = nodeLocks;
+    }
+
+    public void setLevelSelectionLogoutText(String text)    {
+        levelSelectionLogout.setText(text);
     }
 }

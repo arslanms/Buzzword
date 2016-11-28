@@ -4,10 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
@@ -24,6 +21,7 @@ public class LoggedInController implements ParentController, Initializable {
 
     @FXML
     private ComboBox<String> modeComboBox;
+    @FXML private Button loggedInLogout;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -67,7 +65,7 @@ public class LoggedInController implements ParentController, Initializable {
                 }
             }
 
-
+            controller.getLevelSelectController().setLevelSelectionLogoutText((controller.getData().getUsername()));
             controller.setScene(ParentController.scene3ID);
         }
         else {
@@ -98,6 +96,10 @@ public class LoggedInController implements ParentController, Initializable {
         else    {
             alert.close();
         }
+    }
+
+    public void setLoggedInLogoutText(String text)  {
+        loggedInLogout.setText(text);
     }
 
 }

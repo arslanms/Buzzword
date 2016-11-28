@@ -35,6 +35,9 @@ public class LoginDialogController implements ParentController {
                 System.out.println(loginPasswordField.getText());
                 controller.setPlayer(new Player(data));
                 controller.setData(data);
+
+                controller.getLoggedInController().setLoggedInLogoutText(controller.getData().getUsername());
+
                 controller.setScene(ParentController.scene2ID);
             }
             else    {

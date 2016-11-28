@@ -27,12 +27,6 @@ public class MainController extends StackPane {
     private LoginDialogController loginDialogController;
     private ProfileDialogController profileDialogController;
 
-    /*
-    TODO: Work on letting the player select a level node and open the gameplay scene.
-    TODO: Work on making a Yes/No Dialog box for whenever the user tries to exit the application - does not need to be connected to MainController
-    TODO: Work on generating the letters for the grid and creating the target score properly. (Hardest part)
-     */
-
     public MainController() {
         super();
         scenes = new HashMap<>();

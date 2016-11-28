@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
@@ -26,6 +27,8 @@ public class GameplayController implements ParentController {
             gameplayNodeLabel16;
     @FXML private Label gameplayModeLabel;
     @FXML private Label levelLabel;
+    @FXML private Label targetScoreLabel;
+    @FXML private Button gameplayLogout;
 
 
     @Override
@@ -80,7 +83,7 @@ public class GameplayController implements ParentController {
         }
     }
 
-    private void initLabels()   {
+    public void initLabels()   {
         labels = new Label[16];
 
         labels[0] = gameplayNodeLabel1;
@@ -115,5 +118,21 @@ public class GameplayController implements ParentController {
 
     public void setLevelLabelText(String text)  {
         levelLabel.setText(text);
+    }
+
+    public Label[] getLabels() {
+        return labels;
+    }
+
+    public void setLabels(Label[] labels) {
+        this.labels = labels;
+    }
+
+    public void setTargetScoreLabelText(String text)    {
+        targetScoreLabel.setText(text);
+    }
+
+    public void setGameplayLogoutText(String text)  {
+        gameplayLogout.setText(text);
     }
 }
