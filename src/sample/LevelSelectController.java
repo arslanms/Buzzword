@@ -53,6 +53,11 @@ public class LevelSelectController implements ParentController, Initializable {
     }
 
     @FXML
+    public void goToGameplay(ActionEvent event) {
+        System.out.println("Works");
+    }
+
+    @FXML
     public void exitApplication(ActionEvent event)  {
 
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);

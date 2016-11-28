@@ -15,18 +15,18 @@
    <left>
       <VBox id="gameplayLeftVBox" fx:id="gameplayLeftVBox" maxHeight="600.0" minHeight="384.0" prefHeight="412.0" prefWidth="120.0" BorderPane.alignment="BASELINE_LEFT">
          <children>
-            <Button id="gameplayProfileButton" fx:id="gameplayProfileButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Professaur" translateX="35.0" translateY="70.0" />
-            <Button id="gameplayHomeButton" fx:id="gameplayHomeButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Home" translateX="35.0" translateY="90.0" />
+            <Button id="gameplayProfileButton" fx:id="gameplayProfileButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="150.0" text="Professaur" translateX="35.0" translateY="70.0" />
+            <Button id="gameplayHomeButton" fx:id="gameplayHomeButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#openHome" prefHeight="25.0" prefWidth="150.0" text="Home" translateX="35.0" translateY="90.0" />
          </children>
       </VBox>
    </left>
    <center>
-      <Pane id="gameplayNodePane" fx:id="gameplayNodePane" translateX="50.0" BorderPane.alignment="CENTER">
+      <Pane id="gameplayNodePane" fx:id="gameplayNodePane" BorderPane.alignment="CENTER">
          <children>
             <StackPane prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode1" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="B">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel1" text="B">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -35,7 +35,7 @@
             <StackPane layoutX="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode2" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="U">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel2" text="U">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -44,7 +44,7 @@
             <StackPane layoutX="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode3" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="B">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel3" text="B">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -53,13 +53,13 @@
             <StackPane layoutX="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode4" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel4" />
                </children>
             </StackPane>
             <StackPane layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode5" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="Z">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel5" text="Z">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -68,7 +68,7 @@
             <StackPane layoutX="75.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode6" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="Z">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel6" text="Z">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -77,31 +77,31 @@
             <StackPane layoutX="150.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode7" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel7" />
                </children>
             </StackPane>
             <StackPane layoutX="225.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode8" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel8" />
                </children>
             </StackPane>
             <StackPane layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode9" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel9" />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode10" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel10" />
                </children>
             </StackPane>
             <StackPane layoutX="150.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode11" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="W">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel11" text="W">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -110,7 +110,7 @@
             <StackPane layoutX="225.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode12" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="O">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel12" text="O">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -119,13 +119,13 @@
             <StackPane layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode13" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" />
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel13" />
                </children>
             </StackPane>
             <StackPane layoutX="75.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode14" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="A">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel14" text="A">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -134,7 +134,7 @@
             <StackPane layoutX="150.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode15" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="R">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel15" text="R">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -143,7 +143,7 @@
             <StackPane layoutX="225.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode16" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
-                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel" text="D">
+                  <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel16" text="D">
                      <font>
                         <Font size="17.0" />
                      </font></Label>
@@ -155,7 +155,7 @@
    <right>
       <VBox id="gameplayRightVBox" fx:id="gameplayRightVBox" prefHeight="472.0" prefWidth="223.0" translateX="-5.0" translateY="7.0" BorderPane.alignment="CENTER">
          <children>
-            <Button id="exitButton" fx:id="exitButton" alignment="CENTER" mnemonicParsing="false" translateX="165.0" translateY="-8.0">
+            <Button id="exitButton" fx:id="exitButton" alignment="CENTER" mnemonicParsing="false" onAction="#exitApplication" translateX="165.0" translateY="-8.0">
                <VBox.margin>
                   <Insets bottom="20.0" top="20.0" />
                </VBox.margin>
@@ -182,7 +182,7 @@
             </TableView>
             <Label id="totalPointsLabel" fx:id="totalPointsLabel" alignment="CENTER" prefHeight="15.0" prefWidth="229.0" text="Total: 40">
                <VBox.margin>
-                  <Insets bottom="20.0" />
+                  <Insets bottom="10.0" />
                </VBox.margin>
                <font>
                   <Font size="16.0" />
@@ -204,7 +204,7 @@
                <font>
                   <Font size="16.0" />
                </font></Label>
-            <Button id="playResumeButton" fx:id="playResumeButton" mnemonicParsing="false" translateX="380.0" />
+            <Button id="playResumeButton" fx:id="playResumeButton" mnemonicParsing="false" onAction="#playOrPause" translateX="380.0" />
          </children>
       </VBox>
    </bottom>
