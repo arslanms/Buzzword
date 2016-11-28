@@ -4,10 +4,15 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 /**
@@ -37,20 +42,62 @@ public class LoggedInController implements ParentController, Initializable {
 
     @FXML
     public void openLevelSelection(ActionEvent event)   {
-        controller.setGameMode(modeComboBox.getValue());
-        controller.getLevelSelectController().setLevelSelectionModeTitleText(modeComboBox.getValue());
-        controller.setScene(ParentController.scene3ID);
+
+        if (modeComboBox.getValue() != null) {
+
+            controller.setGameMode(modeComboBox.getValue());
+            controller.getLevelSelectController().setLevelSelectionModeTitleText(modeComboBox.getValue());
+
+            controller.getLevelSelectController().initNodeArrays();
+
+            Label[] nodeLabels = controller.getLevelSelectController().getNodeLabels();
+            ImageView[] nodeLocks = controller.getLevelSelectController().getNodeLocks();
+
+            int gameModeIndex = modeComboBox.getSelectionModel().getSelectedIndex();
+
+            int[] modeArray = controller.getData().getModes()[gameModeIndex];
+
+            for (int i = 0; i < modeArray.length; i++) {
+                if (modeArray[i] == -1) {
+                    nodeLabels[i].setText("");
+                    nodeLocks[i].setVisible(true);
+                } else {
+                    nodeLabels[i].setText(Integer.toString(i + 1));
+                    nodeLocks[i].setVisible(false);
+                }
+            }
+
+
+            controller.setScene(ParentController.scene3ID);
+        }
+        else {
+            System.out.println("Mode was not selected.");
+        }
     }
 
     @FXML
     public void logout(ActionEvent event)   {
         controller.setScene(ParentController.scene1ID);
+        controller.setPlayer(null);
+        controller.setData(null);
     }
 
     @FXML
     public void exitApplication(ActionEvent event)  {
-        Stage stage = (Stage) ((Node)(event.getSource())).getScene().getWindow();
-        stage.close();
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirmation Dialog");
+        alert.setContentText("Are you sure you want to exit?");
+
+        Optional<ButtonType> result = alert.showAndWait();
+
+        if (result.get() == ButtonType.OK)  {
+            Stage stage = (Stage) ((Node)(event.getSource())).getScene().getWindow();
+            stage.close();
+        }
+        else    {
+            alert.close();
+        }
     }
 
 }
