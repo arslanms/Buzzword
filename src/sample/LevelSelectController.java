@@ -65,6 +65,13 @@ public class LevelSelectController implements ParentController, Initializable {
             Label level = (Label) clickedLabel.getChildren().get(1);
             int clickedLevel = Integer.parseInt(level.getText());
             System.out.println(clickedLevel);
+
+            controller.getPlayer().setCurrentLevel(clickedLevel);
+
+            controller.getGameplayController().setGameplayModeLabelText(controller.getGameMode());
+            controller.getGameplayController().setLevelLabelText("Level " + clickedLevel);
+            
+            controller.setScene(ParentController.scene4ID);
         }
     }
 

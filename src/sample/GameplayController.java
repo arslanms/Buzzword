@@ -24,7 +24,8 @@ public class GameplayController implements ParentController {
             gameplayNodeLabel6, gameplayNodeLabel7, gameplayNodeLabel8, gameplayNodeLabel9, gameplayNodeLabel10,
             gameplayNodeLabel11, gameplayNodeLabel12, gameplayNodeLabel13, gameplayNodeLabel14, gameplayNodeLabel15,
             gameplayNodeLabel16;
-
+    @FXML private Label gameplayModeLabel;
+    @FXML private Label levelLabel;
 
 
     @Override
@@ -98,5 +99,21 @@ public class GameplayController implements ParentController {
         labels[13] = gameplayNodeLabel14;
         labels[14] = gameplayNodeLabel15;
         labels[15] = gameplayNodeLabel16;
+    }
+
+    public Label getGameplayModeLabel() {
+        return gameplayModeLabel;
+    }
+
+    public void setGameplayModeLabel(Label gameplayModeLabel) {
+        this.gameplayModeLabel = gameplayModeLabel;
+    }
+
+    public void setGameplayModeLabelText(String text)   {
+        gameplayModeLabel.setText(text);
+    }
+
+    public void setLevelLabelText(String text)  {
+        levelLabel.setText(text);
     }
 }
