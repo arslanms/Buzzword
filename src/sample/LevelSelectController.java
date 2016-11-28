@@ -8,6 +8,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -53,8 +55,17 @@ public class LevelSelectController implements ParentController, Initializable {
     }
 
     @FXML
-    public void goToGameplay(ActionEvent event) {
-        System.out.println("Works");
+    public void goToGameplay(MouseEvent event) {
+        StackPane clickedLabel = (StackPane) event.getSource();
+        ImageView lock = (ImageView) clickedLabel.getChildren().get(2);
+        if (lock.isVisible())   {
+            System.out.println("Level is locked.");
+        }
+        else {
+            Label level = (Label) clickedLabel.getChildren().get(1);
+            int clickedLevel = Integer.parseInt(level.getText());
+            System.out.println(clickedLevel);
+        }
     }
 
     @FXML
