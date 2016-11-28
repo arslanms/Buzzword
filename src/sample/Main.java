@@ -12,26 +12,20 @@ import java.util.Scanner;
 
 public class Main extends Application {
 
-    public static final String scene1ID = "login";
-    public static final String scene1resource = "login.fxml";
-    public static final String scene2ID = "loggedin";
-    public static final String scene2resource = "loggedin.fxml";
-    public static final String scene3ID = "levelselection";
-    public static final String scene3resource = "levelselection.fxml";
-    public static final String scene4ID = "gameplay";
-    public static final String scene4resource = "gameplay.fxml";
 
     @Override
     public void start(Stage primaryStage) throws Exception{
 
         MainController controller = new MainController();
 
-        controller.loadScene(scene1ID, scene1resource);
-        controller.loadScene(scene2ID, scene2resource);
-        controller.loadScene(scene3ID, scene3resource);
-        controller.loadScene(scene4ID, scene4resource);
+        controller.loadScene(ParentController.scene1ID, ParentController.scene1resource);
+        controller.loadScene(ParentController.scene2ID, ParentController.scene2resource);
+        controller.loadScene(ParentController.scene3ID, ParentController.scene3resource);
+        controller.loadScene(ParentController.scene4ID, ParentController.scene4resource);
+        controller.loadScene(ParentController.scene5ID, ParentController.scene5resource);
+        controller.loadScene(ParentController.scene6ID, ParentController.scene6resource);
 
-        controller.setScene(scene2ID);
+        controller.setScene(ParentController.scene1ID);
 
         Group root = new Group();
         root.getChildren().addAll(controller);

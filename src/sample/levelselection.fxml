@@ -16,7 +16,7 @@
    <left>
       <VBox maxHeight="600.0" minHeight="384.0" prefHeight="412.0" prefWidth="120.0" BorderPane.alignment="BASELINE_LEFT">
          <children>
-            <Button id="gameplayProfileButton" fx:id="levelselectionProfileButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Professaur" translateX="35.0" translateY="70.0" />
+            <Button id="gameplayProfileButton" fx:id="levelselectionProfileButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="150.0" text="Professaur" translateX="35.0" translateY="70.0" />
             <Button id="gameplayHomeButton" fx:id="levelselectionHomeButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#openHome" prefHeight="25.0" prefWidth="150.0" text="Home" translateX="35.0" translateY="90.0" />
          </children>
       </VBox>

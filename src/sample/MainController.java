@@ -3,6 +3,7 @@ package sample;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 
 import java.io.IOException;
@@ -15,6 +16,7 @@ public class MainController extends StackPane {
 
     private HashMap<String, Node> scenes;
     private String gameMode;
+    private Player player;
 
     public MainController() {
         super();
@@ -40,6 +42,7 @@ public class MainController extends StackPane {
             return true;
         } catch (IOException e) {
             System.out.println("Scene was not loaded properly.");
+            //e.printStackTrace();
             return false;
         }
     }
@@ -68,4 +71,11 @@ public class MainController extends StackPane {
         return gameMode;
     }
 
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
+    }
 }

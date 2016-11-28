@@ -3,7 +3,9 @@ package sample;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,7 +22,7 @@ public class LevelSelectController implements ParentController, Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        levelSelectionModeTitle.setText(controller.getGameMode());
+
     }
 
     @Override
@@ -30,12 +32,18 @@ public class LevelSelectController implements ParentController, Initializable {
 
     @FXML
     public void openHome(ActionEvent event) {
+        controller.setScene(ParentController.scene2ID);
+    }
 
+    @FXML
+    public void logout(ActionEvent event)   {
+        controller.setScene(ParentController.scene1ID);
     }
 
     @FXML
     public void exitApplication(ActionEvent event)  {
-
+        Stage stage = (Stage) ((Node)(event.getSource())).getScene().getWindow();
+        stage.close();
     }
 
 
