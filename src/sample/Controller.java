@@ -1,7 +1,6 @@
 package sample;
 
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -12,7 +11,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
@@ -22,7 +20,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Path;
 
 
 public class Controller {
@@ -218,7 +215,8 @@ public class Controller {
             Parent parent = fxmlLoader.load();
             changeScene(parent, event, fxmlLoader);
             player = new Player(data);
-            System.out.println(data.getPassword());
+            modeComboBox = ((Controller) fxmlLoader.getController()).modeComboBox;
+            addModes();
         }
         else {
             System.out.println("Cannot login");
