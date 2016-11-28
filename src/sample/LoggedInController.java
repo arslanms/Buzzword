@@ -38,6 +38,7 @@ public class LoggedInController implements ParentController, Initializable {
     @FXML
     public void openLevelSelection(ActionEvent event)   {
         controller.setGameMode(modeComboBox.getValue());
+        controller.getLevelSelectController().setLevelSelectionModeTitleText(modeComboBox.getValue());
         controller.setScene(ParentController.scene3ID);
     }
 

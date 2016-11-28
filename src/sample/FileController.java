@@ -14,6 +14,7 @@ public class FileController {
 
     public static final int NUM_MODES = 4;
     public static final int NUM_LEVELS = 8;
+    private int[][] modes;
 
     public void saveData(BuzzData data, File to)  throws FileNotFoundException {
 
@@ -23,11 +24,22 @@ public class FileController {
         JsonArrayBuilder mode3 = Json.createArrayBuilder();
         JsonArrayBuilder mode4 = Json.createArrayBuilder();
 
+        modes = data.getModes();
+
         for (int i = 0; i < NUM_LEVELS; i++)    {
-            mode1.add(-1);
-            mode2.add(-1);
-            mode3.add(-1);
-            mode4.add(-1);
+            mode1.add(modes[0][i]);
+        }
+
+        for (int i = 0; i < NUM_LEVELS; i++)    {
+            mode2.add(modes[1][i]);
+        }
+
+        for (int i = 0; i < NUM_LEVELS; i++)    {
+            mode3.add(modes[2][i]);
+        }
+
+        for (int i = 0; i < NUM_LEVELS; i++)    {
+            mode4.add(modes[3][i]);
         }
 
         JsonObject jsonObject = Json.createObjectBuilder().add("Username", data.getUsername())
@@ -78,12 +90,28 @@ public class FileController {
 
         int[][] modes = new int[4][8];
 
-        for (int i = 0; i < modes.length; i++) {
-            int counter = 0;
-            for (JsonValue obj : mode1) {
-                modes[i][counter] = Integer.parseInt(obj.toString());
-                counter++;
-            }
+        int counter = 0;
+        for (JsonValue obj : mode1) {
+            modes[0][counter] = Integer.parseInt(obj.toString());
+            counter++;
+        }
+
+        counter = 0;
+        for (JsonValue obj : mode2) {
+            modes[1][counter] = Integer.parseInt(obj.toString());
+            counter++;
+        }
+
+        counter = 0;
+        for (JsonValue obj : mode3) {
+            modes[2][counter] = Integer.parseInt(obj.toString());
+            counter++;
+        }
+
+        counter = 0;
+        for (JsonValue obj : mode4) {
+            modes[3][counter] = Integer.parseInt(obj.toString());
+            counter++;
         }
 
         data.setModes(modes);

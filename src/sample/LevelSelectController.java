@@ -46,5 +46,15 @@ public class LevelSelectController implements ParentController, Initializable {
         stage.close();
     }
 
+    public Label getLevelSelectionModeTitle() {
+        return levelSelectionModeTitle;
+    }
 
+    public void setLevelSelectionModeTitle(Label levelSelectionModeTitle) {
+        this.levelSelectionModeTitle = levelSelectionModeTitle;
+    }
+
+    public void setLevelSelectionModeTitleText(String text) {
+        levelSelectionModeTitle.setText(text);
+    }
 }
