@@ -1,0 +1,4 @@
+dictionary-yawl : just google dictionary yawl
+names: look up first name last name csv
+places: look up all cities in the world csv
+science: look up science world list txt (US not UK)

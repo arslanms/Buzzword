@@ -26,6 +26,12 @@ public class LevelSelectController implements ParentController, Initializable {
     private Label[] nodeLabels;
     private ImageView[] nodeLocks;
 
+    private String dictionaryWords = "dictionary-yawl.txt";
+    private String scienceWords = "science.txt";
+    private String placeWords = "places.txt";
+    private String nameWords = "names.txt";
+    private String gridResource;
+
     @FXML
     private Label levelSelectionModeTitle;
     public Label levelSelectNodeLabel1, levelSelectNodeLabel2, levelSelectNodeLabel3, levelSelectNodeLabel4,
@@ -74,7 +80,20 @@ public class LevelSelectController implements ParentController, Initializable {
             controller.getGameplayController().setGameplayModeLabelText(controller.getGameMode());
             controller.getGameplayController().setLevelLabelText("Level " + clickedLevel);
 
-            Grid grid = new Grid();
+            if (controller.getGameMode().equals("Dictionary Words"))    {
+                gridResource = dictionaryWords;
+            }
+            else if (controller.getGameMode().equals("Science"))    {
+                gridResource = scienceWords;
+            }
+            else if (controller.getGameMode().equals("Places")) {
+                gridResource = placeWords;
+            }
+            else {
+                gridResource = nameWords;
+            }
+
+            Grid grid = new Grid(gridResource);
             grid.getDictionary().readDictionary();
 
             controller.getGameplayController().initLabels();
@@ -88,11 +107,14 @@ public class LevelSelectController implements ParentController, Initializable {
                 }
             }
 
-            //grid.displayWords();
+            grid.displayWords();
 
-            controller.getGameplayController().setTargetScoreLabelText("Target Score: " + grid.getTargetScore());
+            int targetScore = grid.getTargetScore() / (9 - controller.getPlayer().getCurrentLevel());
+
+            controller.getGameplayController().setTargetScoreLabelText("Target Score: " + targetScore);
 
             controller.getGameplayController().setGameplayLogoutText(controller.getData().getUsername());
+
             controller.setScene(ParentController.scene4ID);
         }
     }

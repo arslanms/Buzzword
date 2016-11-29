@@ -30,7 +30,7 @@ public class LoggedInController implements ParentController, Initializable {
 
     private void addModes()  {
         modeComboBox.getItems().clear();
-        modeComboBox.getItems().addAll("Dictionary Words", "Science", "Places", "Famous People");
+        modeComboBox.getItems().addAll("Dictionary Words", "Science", "Places", "Names");
     }
 
     @Override

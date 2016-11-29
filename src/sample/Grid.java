@@ -1,6 +1,8 @@
 package sample;
 
 
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Random;
 
 /**
@@ -9,6 +11,8 @@ import java.util.Random;
 public class Grid {
 
     private String[][] grid;
+//    private String[][] grid2 =  {{"U", "H", "Y", "T"}, {"G", "E", "T", "T"}, {"O", "H", "O", "V"}, {"M", "E", "S", "O"}};
+
     private int maxSize;
     private Dictionary dictionary;
     private boolean[][] visitedNodes;
@@ -21,9 +25,11 @@ public class Grid {
     };
     private static final String alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     private int targetScore;
+    private HashSet<String> duplicateCheck;
 
-    public Grid()   {
-        dictionary = new Dictionary();
+    public Grid(String file)   {
+        duplicateCheck = new HashSet<>();
+        dictionary = new Dictionary(file);
         maxSize = 4;
         grid = new String[maxSize][maxSize];
         visitedNodes = new boolean[maxSize][maxSize];
@@ -33,6 +39,7 @@ public class Grid {
                 grid[i][j] = Character.toString(alpha.charAt(num));
             }
         }
+//        grid = grid2;
         targetScore = 0;
     }
 
@@ -40,20 +47,16 @@ public class Grid {
         for (int i = 0; i < maxSize; i++)   {
             for (int j = 0; j < maxSize; j++)   {
                 depthFirstSearch("", i, j);
+                if (targetScore > 50)   {
+                    return;
+                }
             }
         }
     }
 
     public void depthFirstSearch(String prefix, int i, int j)   {
-        if (i < 0 || j < 0 || i >= maxSize || j >= maxSize)   {
-            return;
-        }
 
-        if (visitedNodes[i][j]) {
-            return;
-        }
-
-        if (!dictionary.containsPrefix(prefix)) {
+        if (i < 0 || j < 0 || i >= maxSize || j >= maxSize || visitedNodes[i][j] || !dictionary.containsPrefix(prefix))   {
             return;
         }
 
@@ -66,7 +69,7 @@ public class Grid {
             prefix += grid[i][j];
         }
 
-        if (dictionary.containsWord(prefix))    {
+        if (dictionary.containsWord(prefix) && !duplicateCheck.contains(prefix))    {
 //            System.out.println(prefix);
 
             if (prefix.length() < 3)   {
@@ -88,6 +91,9 @@ public class Grid {
                 targetScore += 5;
             }
 
+            System.out.println(prefix + ", " + targetScore);
+
+            duplicateCheck.add(prefix);
         }
 
         depthFirstSearch(prefix, i-1, j-1);
@@ -105,12 +111,7 @@ public class Grid {
 
     public static int discrete(double[] probabilities) {
 
-        double EPSILON = 1E-14;
-        double sum = 0.0;
-
-        for (int i = 0; i < probabilities.length; i++) {
-            sum += probabilities[i];
-        }
+        double sum;
 
         while (true) {
             double r = uniform();

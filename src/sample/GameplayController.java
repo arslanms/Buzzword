@@ -55,6 +55,9 @@ public class GameplayController implements ParentController {
         alert.setTitle("Confirmation Dialog");
         alert.setContentText("Are you sure you want to exit?");
 
+        isPaused = false;
+        playOrPause();
+
         Optional<ButtonType> result = alert.showAndWait();
 
         if (result.get() == ButtonType.OK)  {
@@ -63,11 +66,13 @@ public class GameplayController implements ParentController {
         }
         else    {
             alert.close();
+            isPaused = true;
+            playOrPause();
         }
     }
 
     @FXML
-    public void playOrPause(ActionEvent event)  {
+    public void playOrPause()  {
         initLabels();
         if (!isPaused)  {
             for (int i = 0; i < labels.length; i++)    {

@@ -15,8 +15,8 @@ public class Dictionary {
     private File dictionaryFile;
     private HashSet<String> dictionary;
 
-    public Dictionary() {
-        dictionaryFile = new File("dictionary-yawl.txt");
+    public Dictionary(String file) {
+        dictionaryFile = new File(file);
         dictionary = new HashSet<String>();
     }
 
@@ -26,8 +26,10 @@ public class Dictionary {
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             Scanner scanner = new Scanner(bufferedReader);
 
-            while(scanner.hasNext())    {
-                dictionary.add(scanner.next());
+            while(scanner.hasNextLine())    {
+                String line = scanner.nextLine().replaceAll(" ", "");
+                line = line.toUpperCase();
+                dictionary.add(line);
             }
 
         } catch (FileNotFoundException e) {
