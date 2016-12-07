@@ -115,6 +115,9 @@ public class LevelSelectController implements ParentController, Initializable {
 
             controller.getGameplayController().setGameplayLogoutText(controller.getData().getUsername());
 
+            controller.getGameplayController().startTimer();
+            controller.getGameplayController().getTimer().playFromStart();
+
             controller.setScene(ParentController.scene4ID);
         }
     }

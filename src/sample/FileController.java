@@ -1,9 +1,13 @@
 package sample;
 
+import sun.plugin2.message.Message;
+
 import javax.json.*;
 import javax.json.stream.JsonGenerator;
 import java.io.*;
 import java.nio.file.Path;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -41,6 +45,8 @@ public class FileController {
         for (int i = 0; i < NUM_LEVELS; i++)    {
             mode4.add(modes[3][i]);
         }
+
+        String encryptedPassword = data.getPassword();
 
         JsonObject jsonObject = Json.createObjectBuilder().add("Username", data.getUsername())
                 .add("Password", encryptPassword(data.getPassword()))
@@ -141,6 +147,7 @@ public class FileController {
         }
 
         return passwordBuffer.toString();
+
     }
 
     private String decryptPassword(String password) {

@@ -21,9 +21,9 @@
       </VBox>
    </left>
    <center>
-      <Pane id="gameplayNodePane" fx:id="gameplayNodePane" BorderPane.alignment="CENTER">
+      <Pane id="gameplayNodePane" fx:id="gameplayNodePane" translateX="75.0" translateY="32.0" BorderPane.alignment="CENTER">
          <children>
-            <StackPane prefHeight="150.0" prefWidth="200.0">
+            <StackPane maxHeight="60.0" maxWidth="60.0" minHeight="60.0" minWidth="60.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode1" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel1" text="B">
@@ -32,7 +32,7 @@
                      </font></Label>
                </children>
             </StackPane>
-            <StackPane layoutX="75.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="75.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode2" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel2" text="U">
@@ -41,7 +41,7 @@
                      </font></Label>
                </children>
             </StackPane>
-            <StackPane layoutX="150.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="150.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode3" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel3" text="B">
@@ -50,13 +50,13 @@
                      </font></Label>
                </children>
             </StackPane>
-            <StackPane layoutX="225.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="225.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode4" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel4" />
                </children>
             </StackPane>
-            <StackPane layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutY="75.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode5" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel5" text="Z">
@@ -65,7 +65,7 @@
                      </font></Label>
                </children>
             </StackPane>
-            <StackPane layoutX="75.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="75.0" layoutY="75.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode6" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel6" text="Z">
@@ -74,31 +74,31 @@
                      </font></Label>
                </children>
             </StackPane>
-            <StackPane layoutX="150.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="150.0" layoutY="75.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode7" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel7" />
                </children>
             </StackPane>
-            <StackPane layoutX="225.0" layoutY="75.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="225.0" layoutY="75.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode8" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel8" />
                </children>
             </StackPane>
-            <StackPane layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutY="150.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode9" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel9" />
                </children>
             </StackPane>
-            <StackPane layoutX="75.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="75.0" layoutY="150.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode10" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel10" />
                </children>
             </StackPane>
-            <StackPane layoutX="150.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="150.0" layoutY="150.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode11" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel11" text="W">
@@ -107,7 +107,7 @@
                      </font></Label>
                </children>
             </StackPane>
-            <StackPane layoutX="225.0" layoutY="150.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="225.0" layoutY="150.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode12" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel12" text="O">
@@ -116,13 +116,13 @@
                      </font></Label>
                </children>
             </StackPane>
-            <StackPane layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutY="225.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode13" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel13" />
                </children>
             </StackPane>
-            <StackPane layoutX="75.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="75.0" layoutY="225.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode14" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel14" text="A">
@@ -131,7 +131,7 @@
                      </font></Label>
                </children>
             </StackPane>
-            <StackPane layoutX="150.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="150.0" layoutY="225.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode15" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel15" text="R">
@@ -140,7 +140,7 @@
                      </font></Label>
                </children>
             </StackPane>
-            <StackPane layoutX="225.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0">
+            <StackPane layoutX="225.0" layoutY="225.0" onDragDetected="#nodeDragDetected" onMouseDragEntered="#nodeDragged" onMouseReleased="#nodeReleased" prefHeight="60.0" prefWidth="60.0">
                <children>
                   <Circle id="gameplayNode" fx:id="gameplayNode16" fill="#505050" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
                   <Label id="gameplayNodeLabel" fx:id="gameplayNodeLabel16" text="D">
