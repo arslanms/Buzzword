@@ -100,7 +100,44 @@ public class LoggedInController implements ParentController, Initializable {
 
     @FXML
     public void openProfile(ActionEvent event)  {
+        controller.getProfileController().getProfileLogout().setText(controller.getData().getUsername());
+        controller.getProfileController().getProfileUsernameLabel().setText("Username: " + controller.getData().getUsername());
 
+        int[][] modes = controller.getData().getModes();
+
+        String modes1str = "Dictionary Words\n";
+
+        for (int i = 0; i < modes[0].length; i++)   {
+            modes1str += "Level " + (i+1) +": " + ((modes[0][i] == -1) ? "N/A":modes[0][i]) + "\n";
+        }
+
+        controller.getProfileController().getMode1Label().setText(modes1str);
+
+        String modes2str = "Science\n";
+
+        for (int i = 0; i < modes[1].length; i++)   {
+            modes2str += "Level " + (i+1) +": " + ((modes[1][i] == -1) ? "N/A":modes[1][i]) + "\n";
+        }
+
+        controller.getProfileController().getMode2Label().setText(modes2str);
+
+        String modes3str = "Places\n";
+
+        for (int i = 0; i < modes[2].length; i++)   {
+            modes3str += "Level " + (i+1) +": " + ((modes[2][i] == -1) ? "N/A":modes[2][i]) + "\n";
+        }
+
+        controller.getProfileController().getMode3Label().setText(modes3str);
+
+        String modes4str = "Names\n";
+
+        for (int i = 0; i < modes[3].length; i++)   {
+            modes4str += "Level " + (i+1) +": " + ((modes[3][i] == -1) ? "N/A":modes[3][i]) + "\n";
+        }
+
+        controller.getProfileController().getMode4Label().setText(modes4str);
+
+        controller.setScene(scene8ID);
     }
 
     @FXML
