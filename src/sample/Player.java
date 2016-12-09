@@ -56,6 +56,4 @@ public class Player {
         this.inGame = inGame;
     }
 
-
-
 }

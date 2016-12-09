@@ -25,6 +25,7 @@ public class LevelSelectController implements ParentController, Initializable {
     private MainController controller;
     private Label[] nodeLabels;
     private ImageView[] nodeLocks;
+    private Grid grid;
 
     private String dictionaryWords = "dictionary-yawl.txt";
     private String scienceWords = "science.txt";
@@ -93,7 +94,7 @@ public class LevelSelectController implements ParentController, Initializable {
                 gridResource = nameWords;
             }
 
-            Grid grid = new Grid(gridResource);
+            grid = new Grid(gridResource);
             grid.getDictionary().readDictionary();
 
             controller.getGameplayController().initLabels();
@@ -110,6 +111,7 @@ public class LevelSelectController implements ParentController, Initializable {
             grid.displayWords();
 
             int targetScore = grid.getTargetScore() / (9 - controller.getPlayer().getCurrentLevel());
+            grid.setTargetScore(targetScore);
 
             controller.getGameplayController().setTargetScoreLabelText("Target Score: " + targetScore);
 
@@ -185,6 +187,14 @@ public class LevelSelectController implements ParentController, Initializable {
 
     public ImageView[] getNodeLocks() {
         return nodeLocks;
+    }
+
+    public Grid getGrid() {
+        return grid;
+    }
+
+    public void setGrid(Grid grid) {
+        this.grid = grid;
     }
 
     public void setNodeLocks(ImageView[] nodeLocks) {

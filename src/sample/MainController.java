@@ -18,6 +18,7 @@ public class MainController extends StackPane {
     private String gameMode;
     private Player player;
     private BuzzData data;
+    private FileController fileController;
 
     //Controllers:
     private LoginController loginController;
@@ -26,10 +27,12 @@ public class MainController extends StackPane {
     private GameplayController gameplayController;
     private LoginDialogController loginDialogController;
     private ProfileDialogController profileDialogController;
+    private HelpController helpController;
 
     public MainController() {
         super();
         scenes = new HashMap<>();
+        fileController = new FileController();
     }
 
     public void addScene(String name, Node scene)   {
@@ -62,6 +65,9 @@ public class MainController extends StackPane {
             }
             else if (parentController instanceof LoginDialogController) {
                 loginDialogController = (LoginDialogController) parentController;
+            }
+            else if (parentController instanceof HelpController)    {
+                helpController = (HelpController) parentController;
             }
             else {
                 profileDialogController = (ProfileDialogController) parentController;
@@ -162,5 +168,21 @@ public class MainController extends StackPane {
 
     public void setProfileDialogController(ProfileDialogController profileDialogController) {
         this.profileDialogController = profileDialogController;
+    }
+
+    public FileController getFileController() {
+        return fileController;
+    }
+
+    public void setFileController(FileController fileController) {
+        this.fileController = fileController;
+    }
+
+    public HelpController getHelpController() {
+        return helpController;
+    }
+
+    public void setHelpController(HelpController helpController) {
+        this.helpController = helpController;
     }
 }

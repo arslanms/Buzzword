@@ -25,6 +25,8 @@
             <Button id="loggedInProfileButton" fx:id="loggedInLogout" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="150.0" text="Professaur" translateX="35.0" translateY="70.0" />
             <ComboBox id="modeComboBox" fx:id="modeComboBox" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0" promptText="Select Mode" translateX="35.0" translateY="90.0" />
             <Button id="loggedInStartPlayingButton" fx:id="loggedInStartPlayingButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#openLevelSelection" prefHeight="25.0" prefWidth="150.0" text="Start Playing" translateX="35.0" translateY="110.0" />
+            <Button id="loggedInStartPlayingButton" fx:id="loggedInProfileButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#openProfile" prefHeight="25.0" prefWidth="150.0" text="View Profile" translateX="35.0" translateY="130.0" />
+            <Button id="loggedInStartPlayingButton" fx:id="loggedInHelpButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#openHelp" prefHeight="25.0" prefWidth="150.0" text="Help" translateX="35.0" translateY="150.0" />
          </children>
       </VBox>
    </left>

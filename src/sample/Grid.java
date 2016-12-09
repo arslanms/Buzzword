@@ -160,4 +160,12 @@ public class Grid {
     public void setTargetScore(int targetScore) {
         this.targetScore = targetScore;
     }
+
+    public HashSet<String> getDuplicateCheck() {
+        return duplicateCheck;
+    }
+
+    public void setDuplicateCheck(HashSet<String> duplicateCheck) {
+        this.duplicateCheck = duplicateCheck;
+    }
 }

@@ -98,6 +98,18 @@ public class LoggedInController implements ParentController, Initializable {
         }
     }
 
+    @FXML
+    public void openProfile(ActionEvent event)  {
+
+    }
+
+    @FXML
+    public void openHelp(ActionEvent event) {
+        controller.getHelpController().getHelpLogout().setText(controller.getData().getUsername());
+        controller.setScene(scene7ID);
+    }
+
+
     public void setLoggedInLogoutText(String text)  {
         loggedInLogout.setText(text);
     }

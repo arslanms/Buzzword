@@ -180,7 +180,7 @@
                   <Insets bottom="20.0" />
                </VBox.margin>
             </TableView>
-            <Label id="totalPointsLabel" fx:id="totalPointsLabel" alignment="CENTER" prefHeight="15.0" prefWidth="229.0" text="Total: 40">
+            <Label id="totalPointsLabel" fx:id="totalPointsLabel" alignment="CENTER" prefHeight="15.0" prefWidth="229.0" text="Total: 0">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>

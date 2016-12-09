@@ -3,20 +3,27 @@ package sample;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-import java.net.URL;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
@@ -31,7 +38,16 @@ public class GameplayController implements ParentController {
     private static final int COUNTDOWNTIME = 60;
     private Timeline timer;
     private static int seconds;
-    private Set<String> selectedLetters;
+    private List<String> selectedLetters;
+    private boolean[] visitedNodes;
+    private Circle prevNode;
+    private ObservableList<TableElement> tabledata;
+    private Set<String> wordsGuessed;
+    private static int totalScore;
+    private Player player;
+    private BuzzData data;
+    private Line[] nodeLines;
+    private int nodeLineIndex;
 
     @FXML
     private Label gameplayNodeLabel1, gameplayNodeLabel2, gameplayNodeLabel3, gameplayNodeLabel4, gameplayNodeLabel5,
@@ -47,6 +63,11 @@ public class GameplayController implements ParentController {
     @FXML private Label targetScoreLabel;
     @FXML private Button gameplayLogout;
     @FXML private Label gameplayTimerLabel;
+    @FXML private Pane gameplayNodePane;
+    @FXML private TableView<TableElement> gameplayTable;
+    @FXML private TableColumn gameplayWordsColumn;
+    @FXML private TableColumn gameplayPointsColumn;
+    @FXML private Label totalPointsLabel;
 
     @Override
     public void setParentController(MainController controller) {
@@ -58,11 +79,13 @@ public class GameplayController implements ParentController {
         controller.setScene(ParentController.scene1ID);
         controller.setPlayer(null);
         controller.setData(null);
+        timer.stop();
     }
 
     @FXML
     public void openHome(ActionEvent event)   {
         controller.setScene(ParentController.scene2ID);
+        timer.stop();
     }
 
     @FXML
@@ -90,7 +113,7 @@ public class GameplayController implements ParentController {
 
     @FXML
     public void playOrPause()  {
-        initLabels();
+
         if (!isPaused)  {
             for (int i = 0; i < labels.length; i++)    {
                 labels[i].setVisible(false);
@@ -109,39 +132,160 @@ public class GameplayController implements ParentController {
 
     @FXML
     public void nodeDragDetected (MouseEvent event)  {
-        selectedLetters = new LinkedHashSet<String>();
-        StackPane clickedNode = (StackPane) event.getSource();
-        Label letter = (Label) clickedNode.getChildren().get(1);
-        selectedLetters.add(letter.getText());
-        ((Node) event.getSource()).startFullDrag();
 
-        Circle circle = (Circle) clickedNode.getChildren().get(0);
-        circle.setFill(Color.CORNFLOWERBLUE);
+        if(!isPaused) {
+
+            selectedLetters = new ArrayList<String>();
+            visitedNodes = new boolean[17];
+            StackPane clickedNode = (StackPane) event.getSource();
+            Circle circle = (Circle) clickedNode.getChildren().get(0);
+            int index = -1;
+            for (int i = 0; i < circles.length; i++) {
+                if (circles[i] == circle) {
+                    index = i;
+                }
+            }
+
+            prevNode = circle;
+
+            if (index != -1 && !visitedNodes[index]) {
+                Label letter = (Label) clickedNode.getChildren().get(1);
+                selectedLetters.add(letter.getText());
+                ((Node) event.getSource()).startFullDrag();
+                visitedNodes[index] = true;
+                circle.setFill(Color.CORNFLOWERBLUE);
+
+            }
+        }
+
     }
 
     @FXML
     public void nodeDragged(MouseEvent event)   {
-        StackPane clickedNode = (StackPane) event.getSource();
-        Label letter = (Label) clickedNode.getChildren().get(1);
-        selectedLetters.add(letter.getText());
 
-        Circle circle = (Circle) clickedNode.getChildren().get(0);
-        circle.setFill(Color.CORNFLOWERBLUE);
+        if(!isPaused) {
+
+            StackPane clickedNode = (StackPane) event.getSource();
+            Circle circle = (Circle) clickedNode.getChildren().get(0);
+            int index = -1;
+            for (int i = 0; i < circles.length; i++) {
+                if (circles[i] == circle) {
+                    index = i;
+                }
+            }
+
+            boolean inRange = nodeInRange(prevNode, index);
+
+            if (index != -1 && !visitedNodes[index] && inRange) {
+                Label letter = (Label) clickedNode.getChildren().get(1);
+                selectedLetters.add(letter.getText());
+                visitedNodes[index] = true;
+                circle.setFill(Color.CORNFLOWERBLUE);
+
+                generateLine(prevNode, circle);
+
+                prevNode = circle;
+            }
+        }
+
 
     }
 
     @FXML
     public void nodeReleased(MouseEvent event)   {
-        StringBuffer sb = new StringBuffer();
-        for (String s : selectedLetters)    {
-            sb.append(s);
-        }
-        System.out.println(sb.toString());
 
-        for (int i = 0; i < circles.length; i++)    {
+        if(!isPaused) {
+
+            StringBuffer sb = new StringBuffer();
+            for (String s : selectedLetters) {
+                sb.append(s);
+            }
+
+            String word = sb.toString();
+
+            for (int i = 0; i < visitedNodes.length; i++) {
+                visitedNodes[i] = false;
+            }
+
             Color c = Color.web("#505050");
-            circles[i].setFill(c);
+            for (int i = 0; i < circles.length; i++) {
+                circles[i].setFill(c);
+            }
+
+            for (int i = 0; i < nodeLines.length; i++) {
+                nodeLines[i] = new Line();
+            }
+
+            prevNode = null;
+
+            Grid grid = controller.getLevelSelectController().getGrid();
+            HashSet words = grid.getDuplicateCheck();
+            int score = determineScore(word.length());
+
+            if (words.contains(word) && !wordsGuessed.contains(word)) {
+                TableElement tableElement = new TableElement(word, score);
+                tabledata.add(tableElement);
+                System.out.println(word);
+                wordsGuessed.add(word);
+                totalScore += score;
+                totalPointsLabel.setText("Total Score: " + totalScore);
+            }
         }
+    }
+
+    private boolean nodeInRange(Circle prevNode, int c2)  {
+        if (c2 == -1)   {
+            return false;
+        }
+
+        int prevNodeIndex = -1;
+        for (int i = 0; i < circles.length; i++)    {
+            if (circles[i] == prevNode)   {
+                prevNodeIndex = i;
+            }
+        }
+
+        if (prevNodeIndex == -1) return false;
+
+        int[][] nodeMatrix = new int[4][4];
+
+        for (int i = 0; i < nodeMatrix.length; i++)  {
+            for (int j = 0; j < nodeMatrix[i].length; j++)  {
+                nodeMatrix[i][j] = 255;
+            }
+        }
+
+        int prevNodeIndex_X = prevNodeIndex / 4;
+        int prevNodeIndex_Y = prevNodeIndex % 4;
+        int c2_X = c2 / 4;
+        int c2_Y = c2 % 4;
+
+        nodeMatrix[prevNodeIndex_X][prevNodeIndex_Y] = prevNodeIndex;
+        nodeMatrix[c2_X][c2_Y] = c2;
+
+        if (prevNodeIndex_X - 1 >= 0 && prevNodeIndex_Y - 1 >= 0 && nodeMatrix[prevNodeIndex_X - 1][prevNodeIndex_Y - 1] == c2) return true;
+        else if (prevNodeIndex_X - 1 >= 0 && prevNodeIndex_Y >= 0 && nodeMatrix[prevNodeIndex_X - 1][prevNodeIndex_Y] == c2) return true;
+        else if (prevNodeIndex_X - 1 >= 0 && prevNodeIndex_Y + 1 < 4 && nodeMatrix[prevNodeIndex_X - 1][prevNodeIndex_Y + 1] == c2) return true;
+
+        else if (prevNodeIndex_X >= 0 && prevNodeIndex_Y - 1 >= 0 && nodeMatrix[prevNodeIndex_X][prevNodeIndex_Y - 1] == c2) return true;
+        else if (prevNodeIndex_X >= 0 && prevNodeIndex_Y + 1 < 4 && nodeMatrix[prevNodeIndex_X][prevNodeIndex_Y + 1] == c2) return true;
+
+        else if (prevNodeIndex_X + 1 < 4 && prevNodeIndex_Y - 1 >= 0 && nodeMatrix[prevNodeIndex_X + 1][prevNodeIndex_Y - 1] == c2) return true;
+        else if (prevNodeIndex_X + 1 < 4 && prevNodeIndex_Y >= 0 && nodeMatrix[prevNodeIndex_X + 1][prevNodeIndex_Y] == c2) return true;
+        else if (prevNodeIndex_X + 1 < 4 && prevNodeIndex_Y + 1 < 4 && nodeMatrix[prevNodeIndex_X + 1][prevNodeIndex_Y + 1] == c2) return true;
+
+        else return false;
+
+    }
+
+    private void generateLine(Circle prevNode, Circle currNode) {
+        if (prevNode == null) return;
+
+        Line line = new Line(prevNode.getCenterX(), prevNode.getCenterY(), currNode.getCenterX(), currNode.getCenterY());
+
+        nodeLines[nodeLineIndex] = line;
+        nodeLineIndex++;
+
     }
 
     public void initLabels()   {
@@ -177,11 +321,39 @@ public class GameplayController implements ParentController {
         circles[8] = gameplayNode9;
         circles[9] = gameplayNode10;
         circles[10] = gameplayNode11;
-        circles[11] = gameplayNode11;
-        circles[12] = gameplayNode12;
-        circles[13] = gameplayNode13;
-        circles[14] = gameplayNode14;
-        circles[15] = gameplayNode15;
+        circles[11] = gameplayNode12;
+        circles[12] = gameplayNode13;
+        circles[13] = gameplayNode14;
+        circles[14] = gameplayNode15;
+        circles[15] = gameplayNode16;
+
+
+        tabledata = FXCollections.observableArrayList();
+
+        gameplayWordsColumn.setCellValueFactory(new PropertyValueFactory<TableElement, String>("word"));
+        gameplayPointsColumn.setCellValueFactory(new PropertyValueFactory<TableElement, Integer>("points"));
+
+        gameplayTable.setItems(tabledata);
+
+        wordsGuessed = new HashSet<String>();
+
+        totalScore = 0;
+        totalPointsLabel.setText("Total Score: " + totalScore);
+
+        player = controller.getPlayer();
+        data = controller.getData();
+
+        nodeLines = new Line[42];
+
+        for (int i = 0; i < nodeLines.length; i++)  {
+            nodeLines[i] = new Line();
+            nodeLines[i].setVisible(false);
+        }
+
+        gameplayNodePane.getChildren().addAll(nodeLines);
+
+        nodeLineIndex = 0;
+
     }
 
     public void startTimer()    {
@@ -198,6 +370,58 @@ public class GameplayController implements ParentController {
                                 gameplayTimerLabel.setText("Time left: " + seconds + "s");
                                 if (seconds <= 0)   {
                                     timer.stop();
+
+                                    int targetScore = controller.getLevelSelectController().getGrid().getTargetScore();
+
+                                    if (totalScore >= targetScore)  {
+                                        System.out.println("You win!");
+                                    }
+                                    else    {
+                                        System.out.println("You lose!");
+                                    }
+
+                                    String currentGameMode = controller.getGameMode();
+                                    int currentLevel = player.getCurrentLevel();
+                                    int[][] modes = data.getModes();
+                                    int modeIndex = getModeIndex(currentGameMode);
+
+                                    int highScore = modes[modeIndex][currentLevel - 1];
+
+                                    if (totalScore > highScore) {
+                                        try {
+                                            System.out.println("You beat your highscore");
+                                            modes[modeIndex][currentLevel - 1] = totalScore;
+
+                                            if (currentLevel < 8)   {
+                                                modes[modeIndex][currentLevel] = 0;
+                                            }
+
+                                            data.setModes(modes);
+                                            File file = new File(data.getUsername() + ".json");
+                                            controller.getFileController().saveData(data, file);
+
+                                            int[] currModeArray = modes[modeIndex];
+                                            Label[] nodeLabels = controller.getLevelSelectController().getNodeLabels();
+                                            ImageView[] nodeLocks = controller.getLevelSelectController().getNodeLocks();
+
+                                            for (int i = 0; i < currModeArray.length; i++) {
+                                                if (currModeArray[i] == -1) {
+                                                    nodeLabels[i].setText("");
+                                                    nodeLocks[i].setVisible(true);
+                                                } else {
+                                                    nodeLabels[i].setText(Integer.toString(i + 1));
+                                                    nodeLocks[i].setVisible(false);
+                                                }
+                                            }
+
+                                        } catch (FileNotFoundException e)   {
+                                            System.out.println("File was not found");
+                                        }
+                                    }
+                                    else    {
+                                        System.out.println("You didn't beat your high score.");
+                                    }
+
                                     Platform.runLater(() -> timerEnded());
                                 }
                             }
@@ -215,6 +439,50 @@ public class GameplayController implements ParentController {
         if (result.get() == ButtonType.OK)  {
             alert.close();
             controller.setScene(scene3ID);
+        }
+
+    }
+
+    private int getModeIndex(String mode){
+        if (mode.equals("Dictionary Words"))    {
+            return 0;
+        }
+        else if (mode.equals("Science"))   {
+            return 1;
+        }
+        else if (mode.equals("Places")) {
+            return 2;
+        }
+        else if (mode.equals("Names"))  {
+            return 3;
+        }
+        else    {
+            return -1;
+        }
+    }
+
+    private int determineScore(int length) {
+
+        if (length < 3)   {
+            return 0;
+        }
+        else if (length >= 3 && length <= 4)  {
+            return 1;
+        }
+        else if (length == 5)  {
+            return 2;
+        }
+        else if (length == 6)  {
+            return 3;
+        }
+        else if (length == 7)  {
+            return 4;
+        }
+        else if (length >= 8)  {
+            return 5;
+        }
+        else    {
+            return -1;
         }
 
     }
