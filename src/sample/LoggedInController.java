@@ -6,6 +6,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -144,6 +146,30 @@ public class LoggedInController implements ParentController, Initializable {
     public void openHelp(ActionEvent event) {
         controller.getHelpController().getHelpLogout().setText(controller.getData().getUsername());
         controller.setScene(scene7ID);
+    }
+
+    @FXML
+    public void keyPressEvents(KeyEvent event)  {
+        if (event.isControlDown() && event.getCode() == KeyCode.L)  {
+            controller.setScene(ParentController.scene1ID);
+            controller.setPlayer(null);
+            controller.setData(null);
+        }
+        if (event.isControlDown() && event.getCode() == KeyCode.Q)  {
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("Confirmation Dialog");
+            alert.setContentText("Are you sure you want to exit?");
+
+            Optional<ButtonType> result = alert.showAndWait();
+
+            if (result.get() == ButtonType.OK)  {
+                Stage stage = (Stage) ((Node)(event.getSource())).getScene().getWindow();
+                stage.close();
+            }
+            else    {
+                alert.close();
+            }
+        }
     }
 
 

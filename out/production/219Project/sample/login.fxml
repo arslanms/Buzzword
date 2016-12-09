@@ -21,7 +21,7 @@
    <left>
       <VBox maxHeight="600.0" minHeight="384.0" prefHeight="412.0" prefWidth="120.0" BorderPane.alignment="BASELINE_LEFT">
          <children>
-            <Button id="loginCreateProfileButton" fx:id="loginCreateProfileButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#openProfileDialog" prefHeight="25.0" prefWidth="150.0" text="Create Profile" translateX="35.0" translateY="70.0" />
+            <Button id="loginCreateProfileButton" fx:id="loginCreateProfileButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#openProfileDialog" onKeyPressed="#keyPressEvents" prefHeight="25.0" prefWidth="150.0" text="Create Profile" translateX="35.0" translateY="70.0" />
             <Button id="loginLoginButton" fx:id="loginLoginButton" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#openLoginDialog" prefHeight="25.0" prefWidth="150.0" text="Login" translateX="35.0" translateY="90.0" />
          </children>
       </VBox>
