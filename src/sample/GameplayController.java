@@ -407,6 +407,10 @@ public class GameplayController implements ParentController {
                                         System.out.println("You lose!");
                                     }
 
+                                    /* GAME DIALOG HERE */
+                                    GameDialog gameDialog = new GameDialog(totalScore, controller);
+                                    gameDialog.show();
+
                                     String currentGameMode = controller.getGameMode();
                                     int currentLevel = player.getCurrentLevel();
                                     int[][] modes = data.getModes();

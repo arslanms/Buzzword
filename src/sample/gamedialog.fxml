@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<BorderPane id="loginDialogPane" fx:id="loginBorderPane" maxHeight="500.0" maxWidth="750.0" minHeight="500.0" minWidth="750.0" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameDialogController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="666.0" translateX="-75.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="loggedInStartPlayingButton" fx:id="replayLevelButton" alignment="CENTER" mnemonicParsing="false" onAction="#replayLevel" text="Replay Level" translateX="75.0">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="loggedInStartPlayingButton" fx:id="startNextLevelButton" cancelButton="true" mnemonicParsing="false" onAction="#startNextLevel" text="Start Next Level" translateX="100.0">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="loggedInStartPlayingButton" fx:id="cancelDialogButton" alignment="CENTER" mnemonicParsing="false" onAction="#cancelDialog" text="Cancel" translateX="125.0" translateY="5.0" />
+         </children>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox minWidth="50.0" prefHeight="100.0" prefWidth="667.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="exitButton" fx:id="exitButton" mnemonicParsing="false" onAction="#exitDialog" translateX="700.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="currentScoreLabel" alignment="CENTER" contentDisplay="CENTER" text="Score: 0" translateX="380.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="bestScoreLabel" text="Personal Best: 0" translateX="360.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <ScrollPane maxHeight="250.0" maxWidth="225.0" minHeight="250.0" minWidth="225.0" prefHeight="250.0" prefWidth="225.0" translateX="25.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane maxHeight="250.0" maxWidth="222.0" minHeight="250.0" minWidth="200.0" prefHeight="250.0" prefWidth="222.0">
+               <children>
+                  <Label fx:id="listOfPossibleWordsLabel" layoutX="93.0" layoutY="14.0" text="Label" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

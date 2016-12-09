@@ -30,6 +30,7 @@ public class MainController extends StackPane {
     private HelpController helpController;
     private ProfileController profileController;
     private EditProfileController editProfileController;
+    private GameDialogController gameDialogController;
 
     public MainController() {
         super();
@@ -208,5 +209,13 @@ public class MainController extends StackPane {
 
     public void setEditProfileController(EditProfileController editProfileController) {
         this.editProfileController = editProfileController;
+    }
+
+    public GameDialogController getGameDialogController() {
+        return gameDialogController;
+    }
+
+    public void setGameDialogController(GameDialogController gameDialogController) {
+        this.gameDialogController = gameDialogController;
     }
 }
