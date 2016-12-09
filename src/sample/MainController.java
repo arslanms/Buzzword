@@ -29,6 +29,7 @@ public class MainController extends StackPane {
     private ProfileDialogController profileDialogController;
     private HelpController helpController;
     private ProfileController profileController;
+    private EditProfileController editProfileController;
 
     public MainController() {
         super();
@@ -72,6 +73,9 @@ public class MainController extends StackPane {
             }
             else if (parentController instanceof ProfileController) {
                 profileController = (ProfileController) parentController;
+            }
+            else if (parentController instanceof EditProfileController) {
+                editProfileController = (EditProfileController) parentController;
             }
             else {
                 profileDialogController = (ProfileDialogController) parentController;
@@ -196,5 +200,13 @@ public class MainController extends StackPane {
 
     public void setProfileController(ProfileController profileController) {
         this.profileController = profileController;
+    }
+
+    public EditProfileController getEditProfileController() {
+        return editProfileController;
+    }
+
+    public void setEditProfileController(EditProfileController editProfileController) {
+        this.editProfileController = editProfileController;
     }
 }

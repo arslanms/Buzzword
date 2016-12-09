@@ -59,7 +59,7 @@ public class ProfileController implements ParentController {
 
     @FXML
     public void openEditProfile(ActionEvent event)  {
-
+        controller.setScene(scene9ID);
     }
 
     public Button getProfileLogout() {

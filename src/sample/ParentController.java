@@ -21,6 +21,8 @@ public interface ParentController {
     String scene7resource = "help.fxml";
     String scene8ID = "viewprofile";
     String scene8resource = "profile.fxml";
+    String scene9ID = "editprofile";
+    String scene9resource = "editprofile.fxml";
 
     public void setParentController(MainController controller);
 

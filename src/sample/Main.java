@@ -23,6 +23,7 @@ public class Main extends Application {
         controller.loadScene(ParentController.scene6ID, ParentController.scene6resource);
         controller.loadScene(ParentController.scene7ID, ParentController.scene7resource);
         controller.loadScene(ParentController.scene8ID, ParentController.scene8resource);
+        controller.loadScene(ParentController.scene9ID, ParentController.scene9resource);
 
         controller.setScene(ParentController.scene1ID);
 
