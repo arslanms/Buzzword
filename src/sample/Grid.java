@@ -51,9 +51,6 @@ public class Grid {
         for (int i = 0; i < maxSize; i++)   {
             for (int j = 0; j < maxSize; j++)   {
                 depthFirstSearch("", i, j);
-                if (targetScore > 50)   {
-                    return;
-                }
             }
         }
     }
@@ -83,7 +80,6 @@ public class Grid {
         }
 
         if (dictionary.containsWord(prefix) && !duplicateCheck.contains(prefix))    {
-//            System.out.println(prefix);
 
             if (prefix.length() < 3)   {
                 targetScore += 0;
@@ -109,18 +105,18 @@ public class Grid {
             duplicateCheck.add(prefix);
         }
 
-        depthFirstSearch(prefix, i-1, j-1);
-        depthFirstSearch(prefix, i, j-1);
-        depthFirstSearch(prefix, i+1, j-1);
-        depthFirstSearch(prefix, i-1, j);
-        depthFirstSearch(prefix, i+1, j);
-        depthFirstSearch(prefix, i-1, j+1);
-        depthFirstSearch(prefix, i, j+1);
-        depthFirstSearch(prefix, i+1, j+1);
+        for (int x = i-1; x <= i + 1; x++)    {
+            for (int y = j-1; y < j+1; y++)    {
+                if (x >= 0 && x <= 3 && y >= 0 && y <= 3 && !visitedNodes[x][y])    {
+                    depthFirstSearch(prefix, x, y);
+                }
+            }
+        }
 
         visitedNodes[i][j] = false;
 
     }
+
 
     public static int discrete(double[] probabilities) {
 

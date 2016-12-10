@@ -48,4 +48,12 @@ public class Dictionary {
         }
         return false;
     }
+
+    public HashSet<String> getDictionary() {
+        return dictionary;
+    }
+
+    public void setDictionary(HashSet<String> dictionary) {
+        this.dictionary = dictionary;
+    }
 }
