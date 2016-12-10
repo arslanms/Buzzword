@@ -48,11 +48,17 @@ public class Grid {
     }
 
     public void displayWords()  {
+        long start_time = System.nanoTime();
         for (int i = 0; i < maxSize; i++)   {
             for (int j = 0; j < maxSize; j++)   {
+
                 depthFirstSearch("", i, j);
+
             }
         }
+        long end_time = System.nanoTime();
+        double difference = (end_time - start_time)/1e6;
+        System.out.println("Time: " + difference + " milliseconds");
     }
 
     public void resetGrid() {
@@ -100,10 +106,11 @@ public class Grid {
                 targetScore += 5;
             }
 
-            System.out.println(prefix + ", " + targetScore);
+//            System.out.printl(prefix + ", " + targetScore);
 
             duplicateCheck.add(prefix);
         }
+
 
         for (int x = i-1; x <= i + 1; x++)    {
             for (int y = j-1; y < j+1; y++)    {

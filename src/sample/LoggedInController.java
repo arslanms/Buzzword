@@ -145,6 +145,11 @@ public class LoggedInController implements ParentController, Initializable {
     @FXML
     public void openHelp(ActionEvent event) {
         controller.getHelpController().getHelpLogout().setText(controller.getData().getUsername());
+
+        String helpStr = "Welcome to BuzzWord Help!\n\nWhat is BuzzWord:\n\nBuzzWord is an interactive educational word game. Players can select from a number of modes and levels where they must identify words from a 4x4 grid of random letters. Stack up enough points to beat the level's criteria or to beat an old high score.\n\nThis is how to play BuzzWord:\n\nSince you are already logged in, I assume you know how creating a profile works.\n\nAny time you want to play BuzzWord, login with your username and password. If one of these do not match, you can not login!\n\nYou can view your profile by clicking the \"View Profile\" button on the homescreen. Here you will be able to see all your highscores for all unlocked levels and modes. Any level you have not unlocked will be denoted with a \"N/A\" for not available.\n\nIf you wish to change your password, click the \"Edit Password\" button. Caution: You will need to enter your current password before changing it to a new one. You cannot change your username!\n\nOnce you are all set up, you can select the mode you want to play from the drop down. We offer 4 modes at the moment: Dictionary Words, Science, Places, and Names. Click start playing once you have selected a mode.\n\nOn the level select screen you will see all current levels that you have unlocked. Select the level you wish to play and it will begin loading. Caution: Loading will take anywhere 10 to 15 seconds on average.\n\nThe gameplay screen consists of multiple components that I will explain shortly.\n\nThere is a 60 second timer -- once it runs out, the game is over. You must reach the target score within that time to advance to the next level. You can select words by dragging along the nodes or by typing in the text bar. The words you guess, if they are valid, will appear in the chart on the right. If you are unsuccessful, you can replay and try again!";
+
+        controller.getHelpController().getHelpText().setText(helpStr);
+
         controller.setScene(scene7ID);
     }
 

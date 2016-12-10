@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.util.Optional;
@@ -21,6 +22,7 @@ public class HelpController implements ParentController {
 
     @FXML
     private Button helpLogout;
+    @FXML private Text helpText;
 
     @Override
     public void setParentController(MainController controller) {
@@ -86,5 +88,13 @@ public class HelpController implements ParentController {
 
     public void setHelpLogout(Button helpLogout) {
         this.helpLogout = helpLogout;
+    }
+
+    public Text getHelpText() {
+        return helpText;
+    }
+
+    public void setHelpText(Text helpText) {
+        this.helpText = helpText;
     }
 }

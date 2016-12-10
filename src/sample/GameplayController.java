@@ -639,10 +639,10 @@ public class GameplayController implements ParentController {
         alert.getDialogPane().setPrefSize(400, 400);
 
         HashSet<String> words = controller.getLevelSelectController().getGrid().getDuplicateCheck();
-        String allWords = "";
+        String allWords = "All possible words: \n";
 
         for (String s: words)   {
-            allWords += s + ", ";
+            allWords += s + " ";
         }
 
         alert.setContentText("Your score: " + totalScore + "\tYour personal best: " + personalBest + "\n\n\n" + allWords);
