@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lol.json" afterPath="$PROJECT_DIR$/lol.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/GameplayController.java" afterPath="$PROJECT_DIR$/src/sample/GameplayController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Grid.java" afterPath="$PROJECT_DIR$/src/sample/Grid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/HelpController.java" afterPath="$PROJECT_DIR$/src/sample/HelpController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/LoggedInController.java" afterPath="$PROJECT_DIR$/src/sample/LoggedInController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/help.fxml" afterPath="$PROJECT_DIR$/src/sample/help.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,85 +65,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LevelSelectController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/LevelSelectController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="124" column="58" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoggedInController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/LoggedInController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="146" column="51" selection-start-line="146" selection-start-column="51" selection-end-line="146" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelpController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/HelpController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2617#2618#0" expanded="true" />
-                <element signature="e#2663#2664#0" expanded="true" />
-                <element signature="e#2703#2704#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameplayController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameplayController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/GameplayController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="361" column="0" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
+            <state relative-caret-position="248">
+              <caret line="376" column="38" selection-start-line="376" selection-start-column="38" selection-end-line="376" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#11051#11060#0" expanded="true" />
+                <element signature="e#11053#11062#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Grid.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Grid.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Dictionary.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="39" />
-              <folding>
-                <element signature="e#1375#1376#0" expanded="true" />
-                <element signature="e#1408#1409#0" expanded="true" />
-                <element signature="e#1469#1470#0" expanded="true" />
-                <element signature="e#1513#1514#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -207,9 +132,9 @@
         <option value="$PROJECT_DIR$/cat.json" />
         <option value="$PROJECT_DIR$/src/sample/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/sample/Grid.java" />
-        <option value="$PROJECT_DIR$/src/sample/GameplayController.java" />
         <option value="$PROJECT_DIR$/src/sample/HelpController.java" />
         <option value="$PROJECT_DIR$/src/sample/LoggedInController.java" />
+        <option value="$PROJECT_DIR$/src/sample/GameplayController.java" />
       </list>
     </option>
   </component>
@@ -799,7 +724,7 @@
       <workItem from="1481147564462" duration="5413000" />
       <workItem from="1481153341414" duration="10980000" />
       <workItem from="1481225596002" duration="4816000" />
-      <workItem from="1481234919070" duration="47630000" />
+      <workItem from="1481234919070" duration="49105000" />
     </task>
     <task id="LOCAL-00001" summary="First commit for 219 project. Made and edited multiple FXML files to be used as my GUIs.">
       <created>1478659826203</created>
@@ -812,7 +737,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188309000" />
+    <option name="totallyTimeSpent" value="189784000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -886,8 +811,14 @@
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/GameplayController.java</url>
+          <line>274</line>
+          <properties />
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="59" />
+      <option name="time" value="60" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1125,14 +1056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LevelSelectController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="124" column="58" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cat.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -1191,14 +1114,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/GameplayController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/LoggedInController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="361" column="0" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#11051#11060#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="702">
+          <caret line="146" column="51" selection-start-line="146" selection-start-column="51" selection-end-line="146" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/LevelSelectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="124" column="58" selection-start-line="124" selection-start-column="58" selection-end-line="124" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1215,11 +1143,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LoggedInController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/GameplayController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="146" column="51" selection-start-line="146" selection-start-column="51" selection-end-line="146" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="248">
+          <caret line="376" column="38" selection-start-line="376" selection-start-column="38" selection-end-line="376" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#11053#11062#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

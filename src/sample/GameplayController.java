@@ -37,7 +37,7 @@ public class GameplayController implements ParentController {
     private Label[] labels;
     private Circle[] circles;
     private boolean isPaused;
-    private static final int COUNTDOWNTIME = 60;
+    private static final int COUNTDOWNTIME = 6000;
     private Timeline timer;
     private static int seconds;
     private List<String> selectedLetters;
@@ -374,7 +374,7 @@ public class GameplayController implements ParentController {
                 List<Integer> list = allIndicesArr[removeIndex];
 
                 for (int j = 0; j < list.size(); j++)   {
-                    visitedNodes[j] = false;
+                    visitedNodes[list.get(j)] = false;
                 }
 
                 allIndicesArr[removeIndex] = null;
