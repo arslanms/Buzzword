@@ -33,14 +33,18 @@ public class Grid {
         maxSize = 4;
         grid = new String[maxSize][maxSize];
         visitedNodes = new boolean[maxSize][maxSize];
+        generateLetters();
+//        grid = grid2;
+        targetScore = 0;
+    }
+
+    public void generateLetters()   {
         for (int i = 0; i < maxSize; i++)   {
             for (int j = 0; j < maxSize; j++)   {
                 int num = discrete(frequencies);
                 grid[i][j] = Character.toString(alpha.charAt(num));
             }
         }
-//        grid = grid2;
-        targetScore = 0;
     }
 
     public void displayWords()  {
@@ -50,6 +54,15 @@ public class Grid {
                 if (targetScore > 50)   {
                     return;
                 }
+            }
+        }
+    }
+
+    public void resetGrid() {
+        duplicateCheck = new HashSet<String>();
+        for (int i = 0; i < maxSize; i++)   {
+            for (int j = 0; j < maxSize; j++)   {
+                visitedNodes[i][j] = false;
             }
         }
     }

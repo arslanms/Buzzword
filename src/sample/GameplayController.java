@@ -50,6 +50,9 @@ public class GameplayController implements ParentController {
     private BuzzData data;
     private Line[] nodeLines;
     private int nodeLineIndex;
+    private int personalBest;
+    private List<List> allOccurences;
+    private List<List> allIndices;
 
     @FXML
     private Label gameplayNodeLabel1, gameplayNodeLabel2, gameplayNodeLabel3, gameplayNodeLabel4, gameplayNodeLabel5,
@@ -70,6 +73,7 @@ public class GameplayController implements ParentController {
     @FXML private TableColumn gameplayWordsColumn;
     @FXML private TableColumn gameplayPointsColumn;
     @FXML private Label totalPointsLabel;
+    @FXML private TextField gameplayTextField;
 
     @Override
     public void setParentController(MainController controller) {
@@ -184,7 +188,7 @@ public class GameplayController implements ParentController {
                 visitedNodes[index] = true;
                 circle.setFill(Color.CORNFLOWERBLUE);
 
-                generateLine(prevNode, circle);
+//                generateLine(prevNode, circle);
 
                 prevNode = circle;
             }
@@ -258,6 +262,174 @@ public class GameplayController implements ParentController {
                 alert.close();
             }
         }
+    }
+
+    @FXML
+    public void findInGridByTyping(KeyEvent event)  {
+        String keyPressed = gameplayTextField.getText();
+        String[][] matrix = controller.getLevelSelectController().getGrid().getGrid();
+
+
+        if (keyPressed.length() == 1)   {
+
+            char lastLetter = keyPressed.charAt(keyPressed.length() - 1);
+            keyPressed = Character.toString(lastLetter);
+            keyPressed = keyPressed.toUpperCase();
+            visitedNodes = new boolean[16];
+
+            allOccurences = new ArrayList<>();
+            allIndices = new ArrayList<>();
+
+            for (int i = 0; i < 4; i++) {
+                for (int j = 0; j < 4; j++) {
+                    if (matrix[i][j].equals(keyPressed))    {
+
+                        int index = 4 * i + j;
+                        List<Integer> intList = new ArrayList<>();
+                        intList.add(index);
+                        allIndices.add(intList);
+                        visitedNodes[index] = true;
+
+                        circles[index].setFill(Color.CORNFLOWERBLUE);
+                        List<String> list = new ArrayList<>();
+                        list.add(keyPressed);
+                        allOccurences.add(list);
+                    }
+                }
+            }
+
+        }
+        else if (event.getCode() == KeyCode.ENTER)  {
+            String text = gameplayTextField.getText();
+            if (text != null)   {
+                gameplayTextField.clear();
+
+                text = text.toUpperCase();
+
+                Color c = Color.web("#505050");
+                for (int i = 0; i < circles.length; i++)    {
+                    circles[i].setFill(c);
+                }
+
+                Grid grid = controller.getLevelSelectController().getGrid();
+                HashSet words = grid.getDuplicateCheck();
+                int score = determineScore(text.length());
+
+                if (words.contains(text) && !wordsGuessed.contains(text)) {
+                    TableElement tableElement = new TableElement(text, score);
+                    tabledata.add(tableElement);
+                    System.out.println(true);
+                    wordsGuessed.add(text);
+                    totalScore += score;
+                    totalPointsLabel.setText("Total Score: " + totalScore);
+                }
+
+            }
+        }
+        else if (keyPressed.length() > 1)   {
+
+            char lastLetter = keyPressed.charAt(keyPressed.length() - 1);
+            keyPressed = Character.toString(lastLetter);
+            keyPressed = keyPressed.toUpperCase();
+
+            List<Integer> markedForRemoval = new ArrayList<Integer>();
+
+            for (int i = 0; i < allIndices.size(); i++)  {
+
+                List<Integer> intList = allIndices.get(i);
+                int currIndex = intList.get(intList.size() - 1);
+
+                int neighbor = isNeighbor(currIndex, keyPressed, matrix);
+
+                if (neighbor != -1 && !visitedNodes[neighbor])   {
+
+                        List<String> strList = allOccurences.get(i);
+                        strList.add(keyPressed);
+
+                        intList.add(neighbor);
+
+                        visitedNodes[neighbor] = true;
+
+                }
+                else    {
+                    markedForRemoval.add(i);
+
+                }
+            }
+
+            List[] allIndicesArr = allIndices.toArray(new List[allIndices.size()]);
+            List[] allOccurencesArr = allOccurences.toArray(new List[allOccurences.size()]);
+
+//            for (int i = 0; i < allIndicesArr.length; i++)  {
+//                for (Object obj: allIndicesArr[i])   {
+//                    int num = (Integer) obj;
+//
+//                    visitedNodes[num] = false;
+//                }
+//            }
+
+            for (int i = 0; i < markedForRemoval.size(); i++)   {
+                int removeIndex = markedForRemoval.get(i);
+
+                List<Integer> list = allIndicesArr[removeIndex];
+
+                for (int j = 0; j < list.size(); j++)   {
+                    visitedNodes[j] = false;
+                }
+
+                allIndicesArr[removeIndex] = null;
+                allOccurencesArr[removeIndex] = null;
+            }
+
+            allIndices.clear();
+            allOccurences.clear();
+
+            for (int i = 0; i < allIndicesArr.length; i++)  {
+                if (allIndicesArr[i] != null && allOccurencesArr[i] != null)    {
+                    allIndices.add(allIndicesArr[i]);
+                    allOccurences.add(allOccurencesArr[i]);
+                }
+            }
+
+            Color c = Color.web("#505050");
+
+            for (int i = 0; i < circles.length; i++)    {
+                circles[i].setFill(c);
+            }
+
+            for (int i = 0; i < allIndices.size(); i++) {
+                for (int j = 0; j < allIndices.get(i).size(); j++)  {
+                    int index = (Integer) allIndices.get(i).get(j);
+                    circles[index].setFill(Color.CORNFLOWERBLUE);
+                }
+            }
+
+        }
+        else if (keyPressed.length() == 0)  {
+            for (int i = 0; i < circles.length; i++)    {
+                Color c = Color.web("#505050");
+                circles[i].setFill(c);
+            }
+        }
+
+    }
+
+    private int isNeighbor(int start, String neighbor, String[][] grid)   {
+        int x = start / 4;
+        int y = start % 4;
+
+        if ((x - 1 >= 0) && (y - 1 >= 0) && grid[x-1][y-1].equals(neighbor) && !visitedNodes[4*(x-1) + (y-1)]) return 4*(x-1) + (y-1);
+        else if ((x - 1 >= 0) && grid[x-1][y].equals(neighbor) && !visitedNodes[4*(x-1) + (y)]) return 4*(x-1) + (y);
+        else if ((x - 1 >= 0) && (y + 1 <= 3) && grid[x-1][y+1].equals(neighbor) && !visitedNodes[4*(x-1) + (y+1)]) return 4*(x-1) + (y+1);
+
+        else if ((y - 1 >= 0) && grid[x][y-1].equals(neighbor) && !visitedNodes[4*(x) + (y-1)]) return 4*(x) + (y-1);
+        else if ((y + 1 <= 3) && grid[x][y+1].equals(neighbor) && !visitedNodes[4*(x) + (y+1)]) return 4*(x) + (y+1);
+
+        else if ((x + 1 <= 3) && (y - 1 >= 0) && grid[x+1][y-1].equals(neighbor) && !visitedNodes[4*(x+1) + (y-1)]) return 4*(x+1) + (y-1);
+        else if ((x + 1 <= 3) && grid[x+1][y].equals(neighbor) && !visitedNodes[4*(x+1) + (y)]) return 4*(x+1) + (y);
+        else if ((x + 1 <= 3) && (y + 1 <= 3) && grid[x+1][y+1].equals(neighbor) && !visitedNodes[4*(x+1) + (y+1)]) return 4*(x+1) + (y+1);
+
+        else return -1;
     }
 
     private boolean nodeInRange(Circle prevNode, int c2)  {
@@ -400,6 +572,14 @@ public class GameplayController implements ParentController {
 
                                     int targetScore = controller.getLevelSelectController().getGrid().getTargetScore();
 
+                                    String currentGameMode = controller.getGameMode();
+                                    int currentLevel = player.getCurrentLevel();
+                                    int[][] modes = data.getModes();
+                                    int modeIndex = getModeIndex(currentGameMode);
+
+                                    int highScore = modes[modeIndex][currentLevel - 1];
+                                    personalBest = highScore;
+
                                     if (totalScore >= targetScore)  {
                                         System.out.println("You win!");
                                     }
@@ -407,23 +587,13 @@ public class GameplayController implements ParentController {
                                         System.out.println("You lose!");
                                     }
 
-                                    /* GAME DIALOG HERE */
-                                    GameDialog gameDialog = new GameDialog(totalScore, controller);
-                                    gameDialog.show();
-
-                                    String currentGameMode = controller.getGameMode();
-                                    int currentLevel = player.getCurrentLevel();
-                                    int[][] modes = data.getModes();
-                                    int modeIndex = getModeIndex(currentGameMode);
-
-                                    int highScore = modes[modeIndex][currentLevel - 1];
 
                                     if (totalScore > highScore) {
                                         try {
                                             System.out.println("You beat your highscore");
                                             modes[modeIndex][currentLevel - 1] = totalScore;
 
-                                            if (currentLevel < 8)   {
+                                            if (totalScore >= targetScore && currentLevel < 8) {
                                                 modes[modeIndex][currentLevel] = 0;
                                             }
 
@@ -461,14 +631,97 @@ public class GameplayController implements ParentController {
     }
 
     public void timerEnded()    {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Time Ended!");
-        alert.setContentText("The gameplay time has ended.");
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Level End");
+        alert.setHeaderText("The timer has run out!");
+
+        alert.setResizable(true);
+        alert.getDialogPane().setPrefSize(400, 400);
+
+        HashSet<String> words = controller.getLevelSelectController().getGrid().getDuplicateCheck();
+        String allWords = "";
+
+        for (String s: words)   {
+            allWords += s + ", ";
+        }
+
+        alert.setContentText("Your score: " + totalScore + "\tYour personal best: " + personalBest + "\n\n\n" + allWords);
+
+        ButtonType replayButton = new ButtonType("Replay");
+        ButtonType startButton = new ButtonType("Start Next");
+        ButtonType buttonTypeCancel = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
+
+
+        if (controller.getPlayer().getCurrentLevel() == 8 || totalScore < controller.getLevelSelectController().getGrid().getTargetScore())  {
+            alert.getButtonTypes().setAll(replayButton, buttonTypeCancel);
+        }
+        else    {
+            alert.getButtonTypes().setAll(replayButton, startButton, buttonTypeCancel);
+        }
 
         Optional<ButtonType> result = alert.showAndWait();
 
-        if (result.get() == ButtonType.OK)  {
-            alert.close();
+        if (result.get() == replayButton){
+            System.out.println("Replay clicked");
+
+            controller.getLevelSelectController().getGrid().resetGrid();
+            initLabels();
+
+            controller.getLevelSelectController().getGrid().generateLetters();
+            String[][] gridArray = controller.getLevelSelectController().getGrid().getGrid();
+
+            for (int i = 0; i < 4; i++) {
+                for (int j = 0; j < 4; j++) {
+                    labels[4*i + j].setText(gridArray[i][j]);
+                }
+            }
+
+            controller.getLevelSelectController().getGrid().setTargetScore(0);
+            controller.getLevelSelectController().getGrid().displayWords();
+
+            int targetScore = controller.getLevelSelectController().getGrid().getTargetScore() / (9 - controller.getPlayer().getCurrentLevel());
+            controller.getLevelSelectController().getGrid().setTargetScore(targetScore);
+            setTargetScoreLabelText("Target Score: " + targetScore);
+
+            startTimer();
+            timer.playFromStart();
+
+
+        } else if (result.get() == startButton) {
+
+
+            System.out.println("Start clicked");
+
+            int currentLevel = controller.getPlayer().getCurrentLevel();
+            currentLevel++;
+            controller.getPlayer().setCurrentLevel(currentLevel);
+
+            levelLabel.setText("Level " + currentLevel);
+
+            controller.getLevelSelectController().getGrid().resetGrid();
+            initLabels();
+
+            controller.getLevelSelectController().getGrid().generateLetters();
+            String[][] gridArray = controller.getLevelSelectController().getGrid().getGrid();
+
+            for (int i = 0; i < 4; i++) {
+                for (int j = 0; j < 4; j++) {
+                    labels[4*i + j].setText(gridArray[i][j]);
+                }
+            }
+
+            controller.getLevelSelectController().getGrid().setTargetScore(0);
+            controller.getLevelSelectController().getGrid().displayWords();
+
+            int targetScore = controller.getLevelSelectController().getGrid().getTargetScore() / (9 - controller.getPlayer().getCurrentLevel());
+            controller.getLevelSelectController().getGrid().setTargetScore(targetScore);
+            setTargetScoreLabelText("Target Score: " + targetScore);
+
+            startTimer();
+            timer.playFromStart();
+
+        } else {
+            System.out.println("Close clicked");
             controller.setScene(scene3ID);
         }
 

@@ -14,9 +14,10 @@ public class GameDialog extends Stage {
 
     MainController controller;
     int currentScore;
+    int targetScore;
     GameDialogController gameDialogController;
 
-    public GameDialog(int currentScore, MainController controller)  {
+    public GameDialog(int currentScore, int targetScore, MainController controller)  {
         this.controller = controller;
         this.currentScore = currentScore;
 
@@ -41,9 +42,44 @@ public class GameDialog extends Stage {
             setWidth(300);
             setHeight(300);
 
+            if (currentScore < targetScore)  {
+                gameDialogController.getStartNextLevelButton().setVisible(false);
+            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+    public MainController getController() {
+        return controller;
+    }
+
+    public void setController(MainController controller) {
+        this.controller = controller;
+    }
+
+    public int getCurrentScore() {
+        return currentScore;
+    }
+
+    public void setCurrentScore(int currentScore) {
+        this.currentScore = currentScore;
+    }
+
+    public int getTargetScore() {
+        return targetScore;
+    }
+
+    public void setTargetScore(int targetScore) {
+        this.targetScore = targetScore;
+    }
+
+    public GameDialogController getGameDialogController() {
+        return gameDialogController;
+    }
+
+    public void setGameDialogController(GameDialogController gameDialogController) {
+        this.gameDialogController = gameDialogController;
+    }
 }
