@@ -417,17 +417,17 @@ public class GameplayController implements ParentController {
     private int isNeighbor(int start, String neighbor, String[][] grid)   {
         int x = start / 4;
         int y = start % 4;
+        List<Integer> returnList = new ArrayList<>();
 
-        if ((x - 1 >= 0) && (y - 1 >= 0) && grid[x-1][y-1].equals(neighbor) && !visitedNodes[4*(x-1) + (y-1)]) return 4*(x-1) + (y-1);
-        else if ((x - 1 >= 0) && grid[x-1][y].equals(neighbor) && !visitedNodes[4*(x-1) + (y)]) return 4*(x-1) + (y);
-        else if ((x - 1 >= 0) && (y + 1 <= 3) && grid[x-1][y+1].equals(neighbor) && !visitedNodes[4*(x-1) + (y+1)]) return 4*(x-1) + (y+1);
+        if ((x - 1 >= 0) && (y - 1 >= 0) && grid[x-1][y-1].equals(neighbor) && !visitedNodes[4*(x-1) + (y-1)]) return (4*(x-1) + (y-1));
+        else if ((x - 1 >= 0) && grid[x-1][y].equals(neighbor) && !visitedNodes[4*(x-1) + (y)]) return ( 4*(x-1) + (y));
+        else if ((x - 1 >= 0) && (y + 1 <= 3) && grid[x-1][y+1].equals(neighbor) && !visitedNodes[4*(x-1) + (y+1)]) return ( 4*(x-1) + (y+1));
+        else if ((y - 1 >= 0) && grid[x][y-1].equals(neighbor) && !visitedNodes[4*(x) + (y-1)]) return ( 4*(x) + (y-1));
+        else if ((y + 1 <= 3) && grid[x][y+1].equals(neighbor) && !visitedNodes[4*(x) + (y+1)]) return ( 4*(x) + (y+1));
 
-        else if ((y - 1 >= 0) && grid[x][y-1].equals(neighbor) && !visitedNodes[4*(x) + (y-1)]) return 4*(x) + (y-1);
-        else if ((y + 1 <= 3) && grid[x][y+1].equals(neighbor) && !visitedNodes[4*(x) + (y+1)]) return 4*(x) + (y+1);
-
-        else if ((x + 1 <= 3) && (y - 1 >= 0) && grid[x+1][y-1].equals(neighbor) && !visitedNodes[4*(x+1) + (y-1)]) return 4*(x+1) + (y-1);
-        else if ((x + 1 <= 3) && grid[x+1][y].equals(neighbor) && !visitedNodes[4*(x+1) + (y)]) return 4*(x+1) + (y);
-        else if ((x + 1 <= 3) && (y + 1 <= 3) && grid[x+1][y+1].equals(neighbor) && !visitedNodes[4*(x+1) + (y+1)]) return 4*(x+1) + (y+1);
+        else if ((x + 1 <= 3) && (y - 1 >= 0) && grid[x+1][y-1].equals(neighbor) && !visitedNodes[4*(x+1) + (y-1)]) return ( 4*(x+1) + (y-1));
+        else if ((x + 1 <= 3) && grid[x+1][y].equals(neighbor) && !visitedNodes[4*(x+1) + (y)]) return( 4*(x+1) + (y));
+        else if ((x + 1 <= 3) && (y + 1 <= 3) && grid[x+1][y+1].equals(neighbor) && !visitedNodes[4*(x+1) + (y+1)]) return ( 4*(x+1) + (y+1));
 
         else return -1;
     }

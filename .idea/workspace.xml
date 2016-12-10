@@ -68,8 +68,8 @@
       <file leaf-file-name="GameplayController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/GameplayController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="376" column="38" selection-start-line="376" selection-start-column="38" selection-end-line="376" selection-end-column="38" />
+            <state relative-caret-position="4665">
+              <caret line="343" column="34" selection-start-line="343" selection-start-column="34" selection-end-line="343" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#11053#11062#0" expanded="true" />
@@ -724,7 +724,7 @@
       <workItem from="1481147564462" duration="5413000" />
       <workItem from="1481153341414" duration="10980000" />
       <workItem from="1481225596002" duration="4816000" />
-      <workItem from="1481234919070" duration="49105000" />
+      <workItem from="1481234919070" duration="52370000" />
     </task>
     <task id="LOCAL-00001" summary="First commit for 219 project. Made and edited multiple FXML files to be used as my GUIs.">
       <created>1478659826203</created>
@@ -737,7 +737,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189784000" />
+    <option name="totallyTimeSpent" value="193049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -792,33 +792,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/GameplayController.java</url>
-          <line>302</line>
-          <properties />
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/GameplayController.java</url>
-          <line>330</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/GameplayController.java</url>
-          <line>290</line>
-          <properties />
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/GameplayController.java</url>
-          <line>274</line>
-          <properties />
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="60" />
+      <option name="time" value="62" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1145,8 +1119,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/GameplayController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="376" column="38" selection-start-line="376" selection-start-column="38" selection-end-line="376" selection-end-column="38" />
+        <state relative-caret-position="4665">
+          <caret line="343" column="34" selection-start-line="343" selection-start-column="34" selection-end-line="343" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#11053#11062#0" expanded="true" />
