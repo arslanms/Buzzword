@@ -103,7 +103,7 @@ public class Grid {
                 targetScore += 4;
             }
             else if (prefix.length() >= 8)  {
-                targetScore += 5;
+                targetScore += 11;
             }
 
 //            System.out.printl(prefix + ", " + targetScore);

@@ -37,7 +37,7 @@ public class GameplayController implements ParentController {
     private Label[] labels;
     private Circle[] circles;
     private boolean isPaused;
-    private static final int COUNTDOWNTIME = 6000;
+    private static final int COUNTDOWNTIME = 60;
     private Timeline timer;
     private static int seconds;
     private List<String> selectedLetters;
@@ -763,7 +763,7 @@ public class GameplayController implements ParentController {
             return 4;
         }
         else if (length >= 8)  {
-            return 5;
+            return 11;
         }
         else    {
             return -1;

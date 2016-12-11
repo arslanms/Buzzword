@@ -2,6 +2,7 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
 import java.io.File;
@@ -28,8 +29,13 @@ public class ProfileDialogController implements ParentController {
         String username = profileUsernameField.getText();
         String password = profilePasswordField.getText();
 
-        if (username == null || password == null)   {
-            System.out.println("Fields are null.");
+        if (username == null || password == null || username.equals("") || password.equals(""))   {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("The username or password field is not entered.");
+            alert.setContentText("Please enter a username or password.");
+
+            alert.showAndWait();
             controller.setScene(ParentController.scene1ID);
         }
         else    {

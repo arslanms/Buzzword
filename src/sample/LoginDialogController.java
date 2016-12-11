@@ -2,6 +2,7 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
@@ -28,8 +29,26 @@ public class LoginDialogController implements ParentController {
         BuzzData data = new BuzzData();
 
 
+
+
         try {
-            boolean success = fileController.loadData(loginUsernameField.getText(), loginPasswordField.getText(), data);
+
+
+            boolean success = false;
+
+            if (loginUsernameField.getText().equals("") || loginPasswordField.getText().equals("")) {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("The username and/or password is not correct.");
+                alert.setContentText("Please enter the correct information.");
+
+                alert.showAndWait();
+                controller.setScene(ParentController.scene1ID);
+            }
+            else {
+
+                success = fileController.loadData(loginUsernameField.getText(), loginPasswordField.getText(), data);
+            }
 
             if (success)    {
                 System.out.println(loginPasswordField.getText());
@@ -41,7 +60,12 @@ public class LoginDialogController implements ParentController {
                 controller.setScene(ParentController.scene2ID);
             }
             else    {
-                System.out.println("Not a valid account.");
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("The username and/or password is not correct.");
+                alert.setContentText("Please enter the correct information.");
+
+                alert.showAndWait();
                 controller.setScene(ParentController.scene1ID);
             }
 

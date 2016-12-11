@@ -2,6 +2,7 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 
 import java.io.File;
@@ -39,26 +40,40 @@ public class EditProfileController implements ParentController {
         String currentPassword = editProfileCurrentPwd.getText();
         String newPassword = editProfileNewPwd.getText();
 
-        if (password.equals(currentPassword))   {
+        if (currentPassword.equals("") || newPassword.equals("") || currentPassword == null || newPassword == null) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Your current password does not match.");
+            alert.setContentText("Please enter the correct password.");
 
-            try {
-
-                data.setPassword(newPassword);
-                controller.setData(data);
-
-                File file = new File(controller.getData().getUsername() + ".json");
-
-                fileController.saveData(controller.getData(), file);
-
-            } catch (FileNotFoundException e) {
-                System.out.println("File was not found.");
-            }
-
-            controller.setScene(scene2ID);
-
+            alert.showAndWait();
         }
-        else    {
-            System.out.println("Current password does not match.");
+        else {
+            if (password.equals(currentPassword)) {
+
+                try {
+
+                    data.setPassword(newPassword);
+                    controller.setData(data);
+
+                    File file = new File(controller.getData().getUsername() + ".json");
+
+                    fileController.saveData(controller.getData(), file);
+
+                } catch (FileNotFoundException e) {
+                    System.out.println("File was not found.");
+                }
+
+                controller.setScene(scene2ID);
+
+            } else {
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Your current password does not match.");
+                alert.setContentText("Please enter the correct password.");
+
+                alert.showAndWait();
+            }
         }
 
     }

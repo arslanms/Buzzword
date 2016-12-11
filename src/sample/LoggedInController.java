@@ -71,7 +71,12 @@ public class LoggedInController implements ParentController, Initializable {
             controller.setScene(ParentController.scene3ID);
         }
         else {
-            System.out.println("Mode was not selected.");
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText("Mode was not selected.");
+            alert.setContentText("Please select a mode.");
+
+            alert.showAndWait();
         }
     }
 

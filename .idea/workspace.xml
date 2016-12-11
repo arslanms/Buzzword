@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/219Project/sample/EditProfileController.class" afterPath="$PROJECT_DIR$/out/production/219Project/sample/EditProfileController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/219Project/sample/GameplayController.class" afterPath="$PROJECT_DIR$/out/production/219Project/sample/GameplayController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/219Project/sample/Grid.class" afterPath="$PROJECT_DIR$/out/production/219Project/sample/Grid.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/219Project/sample/LoggedInController.class" afterPath="$PROJECT_DIR$/out/production/219Project/sample/LoggedInController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/219Project/sample/LoginDialogController.class" afterPath="$PROJECT_DIR$/out/production/219Project/sample/LoginDialogController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/219Project/sample/ProfileDialogController.class" afterPath="$PROJECT_DIR$/out/production/219Project/sample/ProfileDialogController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/EditProfileController.java" afterPath="$PROJECT_DIR$/src/sample/EditProfileController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/GameplayController.java" afterPath="$PROJECT_DIR$/src/sample/GameplayController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Grid.java" afterPath="$PROJECT_DIR$/src/sample/Grid.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/LoggedInController.java" afterPath="$PROJECT_DIR$/src/sample/LoggedInController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/LoginDialogController.java" afterPath="$PROJECT_DIR$/src/sample/LoginDialogController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/ProfileDialogController.java" afterPath="$PROJECT_DIR$/src/sample/ProfileDialogController.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,12 +80,22 @@
       <file leaf-file-name="GameplayController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/GameplayController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4665">
-              <caret line="343" column="34" selection-start-line="343" selection-start-column="34" selection-end-line="343" selection-end-column="34" />
+            <state relative-caret-position="10095">
+              <caret line="752" column="47" selection-start-line="752" selection-start-column="47" selection-end-line="752" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#11053#11062#0" expanded="true" />
+                <element signature="e#11051#11060#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grid.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Grid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,10 +132,8 @@
         <option value="$PROJECT_DIR$/src/sample/styles.css" />
         <option value="$PROJECT_DIR$/src/sample/images/FileController.java" />
         <option value="$PROJECT_DIR$/src/sample/BuzzData.java" />
-        <option value="$PROJECT_DIR$/src/sample/ProfileDialogController.java" />
         <option value="$PROJECT_DIR$/src/sample/ExitDialog.java" />
         <option value="$PROJECT_DIR$/src/sample/Dice.java" />
-        <option value="$PROJECT_DIR$/src/sample/LoginDialogController.java" />
         <option value="$PROJECT_DIR$/lol.json" />
         <option value="$PROJECT_DIR$/src/sample/FileController.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
@@ -122,7 +142,6 @@
         <option value="$PROJECT_DIR$/src/sample/helpController.java" />
         <option value="$PROJECT_DIR$/src/sample/ParentController.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
-        <option value="$PROJECT_DIR$/src/sample/EditProfileController.java" />
         <option value="$PROJECT_DIR$/src/sample/LoginController.java" />
         <option value="$PROJECT_DIR$/src/sample/LevelSelectController.java" />
         <option value="$PROJECT_DIR$/src/sample/ProfileController.java" />
@@ -131,10 +150,13 @@
         <option value="$PROJECT_DIR$/src/sample/GameDialogController.java" />
         <option value="$PROJECT_DIR$/cat.json" />
         <option value="$PROJECT_DIR$/src/sample/Dictionary.java" />
-        <option value="$PROJECT_DIR$/src/sample/Grid.java" />
         <option value="$PROJECT_DIR$/src/sample/HelpController.java" />
-        <option value="$PROJECT_DIR$/src/sample/LoggedInController.java" />
+        <option value="$PROJECT_DIR$/src/sample/Grid.java" />
         <option value="$PROJECT_DIR$/src/sample/GameplayController.java" />
+        <option value="$PROJECT_DIR$/src/sample/LoggedInController.java" />
+        <option value="$PROJECT_DIR$/src/sample/ProfileDialogController.java" />
+        <option value="$PROJECT_DIR$/src/sample/LoginDialogController.java" />
+        <option value="$PROJECT_DIR$/src/sample/EditProfileController.java" />
       </list>
     </option>
   </component>
@@ -724,7 +746,7 @@
       <workItem from="1481147564462" duration="5413000" />
       <workItem from="1481153341414" duration="10980000" />
       <workItem from="1481225596002" duration="4816000" />
-      <workItem from="1481234919070" duration="52370000" />
+      <workItem from="1481234919070" duration="54607000" />
     </task>
     <task id="LOCAL-00001" summary="First commit for 219 project. Made and edited multiple FXML files to be used as my GUIs.">
       <created>1478659826203</created>
@@ -737,7 +759,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="193049000" />
+    <option name="totallyTimeSpent" value="195286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -757,6 +779,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25594252" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -772,7 +795,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -801,7 +823,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/images/FileController.java" />
     <entry file="file://$PROJECT_DIR$/CSSids" />
     <entry file="file://$PROJECT_DIR$/boboobob" />
     <entry file="file://$PROJECT_DIR$/b0b" />
@@ -829,20 +850,6 @@
     <entry file="file://$PROJECT_DIR$/bobbb.json" />
     <entry file="file://$PROJECT_DIR$/booby.json" />
     <entry file="file://$PROJECT_DIR$/src/sample/ExitDialog.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/ProfileDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#506#507#0" expanded="false" />
-            <element signature="e#550#551#0" expanded="false" />
-            <element signature="e#1783#1784#0" expanded="false" />
-            <element signature="e#1845#1846#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Dice.java" />
     <entry file="file://$PROJECT_DIR$/dictionary-yawl.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -918,36 +925,6 @@
         <state relative-caret-position="189">
           <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LoginDialogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="57" column="9" selection-start-line="40" selection-start-column="8" selection-end-line="57" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/EditProfileController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1080,22 +1057,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/LoggedInController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="146" column="51" selection-start-line="146" selection-start-column="51" selection-end-line="146" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/LevelSelectController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
@@ -1117,13 +1078,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/GameplayController.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Grid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4665">
-          <caret line="343" column="34" selection-start-line="343" selection-start-column="34" selection-end-line="343" selection-end-column="34" />
+        <state relative-caret-position="483">
+          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/LoggedInController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="76" column="55" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ProfileDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="31" column="94" selection-start-line="31" selection-start-column="94" selection-end-line="31" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/LoginDialogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/EditProfileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#11053#11062#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/GameplayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10095">
+          <caret line="752" column="47" selection-start-line="752" selection-start-column="47" selection-end-line="752" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#11051#11060#0" expanded="true" />
           </folding>
         </state>
       </provider>
