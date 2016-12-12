@@ -29,7 +29,9 @@ public class ProfileDialogController implements ParentController {
         String username = profileUsernameField.getText();
         String password = profilePasswordField.getText();
 
-        if (username == null || password == null || username.equals("") || password.equals(""))   {
+        File f = new File(username + ".json");
+
+        if (username == null || password == null || username.equals("") || password.equals("") || f.exists())   {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
             alert.setHeaderText("The username or password field is not entered.");

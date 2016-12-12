@@ -106,7 +106,7 @@ public class Grid {
                 targetScore += 11;
             }
 
-//            System.out.printl(prefix + ", " + targetScore);
+//            System.out.println(prefix + ", " + targetScore);
 
             duplicateCheck.add(prefix);
         }

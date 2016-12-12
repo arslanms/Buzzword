@@ -125,6 +125,7 @@ public class GameplayController implements ParentController {
                 labels[i].setVisible(false);
             }
             isPaused = true;
+            gameplayTextField.setDisable(true);
             timer.pause();
         }
         else    {
@@ -132,6 +133,7 @@ public class GameplayController implements ParentController {
                 labels[i].setVisible(true);
             }
             isPaused = false;
+            gameplayTextField.setDisable(false);
             timer.play();
         }
     }
@@ -633,7 +635,10 @@ public class GameplayController implements ParentController {
     public void timerEnded()    {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Level End");
-        alert.setHeaderText("The timer has run out!");
+
+        String winOrLose = (totalScore >= controller.getLevelSelectController().getGrid().getTargetScore()) ? "You win!":"You lose!";
+
+        alert.setHeaderText("The timer has run out! " + winOrLose);
 
         alert.setResizable(true);
         alert.getDialogPane().setPrefSize(400, 400);
@@ -645,7 +650,8 @@ public class GameplayController implements ParentController {
             allWords += s + " ";
         }
 
-        alert.setContentText("Your score: " + totalScore + "\tYour personal best: " + personalBest + "\n\n\n" + allWords);
+        String personalBestStr = (totalScore > personalBest) ? "You beat your personal best!":"You didn't beat your personal best.";
+        alert.setContentText("Your score: " + totalScore + "\tYour personal best: " + personalBest + "\n" + personalBestStr + "\n\n\n" + allWords);
 
         ButtonType replayButton = new ButtonType("Replay");
         ButtonType startButton = new ButtonType("Start Next");
